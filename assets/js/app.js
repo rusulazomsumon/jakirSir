@@ -8,6 +8,11 @@
 
 "use strict";
 
+const showToast = (type, message) => {
+    window.dispatchEvent(new CustomEvent('sonner-toast', {
+        detail: { type, message }
+    }))
+}
 
 /*=========================================================
                 APP
@@ -997,19 +1002,19 @@ App.initEnrollment = function () {
         const senderMobile = document.getElementById("senderMobile").value.trim();
         const trxId = document.getElementById("trxId").value.trim();
         if (!selectedMethod) {
-            alert("পেমেন্ট মেথড নির্বাচন করুন!");
+            showToast('warning', 'পেমেন্ট মেথড নির্বাচন করুন!');
             return;
         }
         if (!senderMobile) {
-            alert("আপনার মোবাইল নম্বর লিখুন!");
+            showToast('warning', 'আপনার মোবাইল নম্বর লিখুন!');
             return;
         }
         if (senderMobile.length < 11) {
-            alert("সঠিক মোবাইল নম্বর লিখুন!");
+            showToast('warning', 'সঠিক মোবাইল নম্বর লিখুন!');
             return;
         }
         if (!trxId) {
-            alert("TRX ID লিখুন!");
+            showToast('warning', 'TRX ID লিখুন!');
             return;
         }
         // Show success
@@ -1542,7 +1547,7 @@ const menuBtn = document.querySelector(".menu-btn");
 
 menuBtn?.addEventListener("click", () => {
 
-    alert("Sidebar/Menu Coming Soon");
+    showToast('info', 'Sidebar/Menu Coming Soon');
 
 });
 
@@ -1558,7 +1563,7 @@ const searchBtn = document.querySelector(".ri-search-line")?.parentElement;
 
 searchBtn?.addEventListener("click", () => {
 
-    alert("Search Coming Soon");
+    showToast('info', 'Search Coming Soon');
 
 });
 
@@ -1572,22 +1577,19 @@ searchBtn?.addEventListener("click", () => {
 
 function enableDarkMode() {
 
-    document.body.classList.toggle("dark");
+    const enabled = !document.documentElement.classList.contains("dark");
 
-    localStorage.setItem(
-
-        "theme",
-
-        document.body.classList.contains("dark")
-
-    );
+    document.documentElement.classList.toggle("dark", enabled);
+    document.body.classList.toggle("dark", enabled);
+    localStorage.setItem("theme", enabled ? "dark" : "light");
 
 }
 
 const savedTheme = localStorage.getItem("theme");
 
-if (savedTheme === "true") {
+if (savedTheme === "dark") {
 
+    document.documentElement.classList.add("dark");
     document.body.classList.add("dark");
 
 }
@@ -1638,67 +1640,6 @@ document.querySelectorAll(
 
 
 
-//=========================================================
-// BUTTON RIPPLE
-//=========================================================
-
-document.querySelectorAll("button").forEach(btn => {
-
-    btn.addEventListener("click", function (e) {
-
-        const ripple = document.createElement("span");
-
-        const size = Math.max(
-
-            this.clientWidth,
-
-            this.clientHeight
-
-        );
-
-        ripple.style.width = size + "px";
-
-        ripple.style.height = size + "px";
-
-        ripple.style.position = "absolute";
-
-        ripple.style.left =
-
-            e.offsetX - size / 2 + "px";
-
-        ripple.style.top =
-
-            e.offsetY - size / 2 + "px";
-
-        ripple.style.background = "rgba(255,255,255,.35)";
-
-        ripple.style.borderRadius = "50%";
-
-        ripple.style.transform = "scale(0)";
-
-        ripple.style.pointerEvents = "none";
-
-        ripple.style.transition = ".6s";
-
-        this.appendChild(ripple);
-
-        requestAnimationFrame(() => {
-
-            ripple.style.transform = "scale(3)";
-
-            ripple.style.opacity = "0";
-
-        });
-
-        setTimeout(() => {
-
-            ripple.remove();
-
-        }, 600);
-
-    });
-
-});
 
 
 
