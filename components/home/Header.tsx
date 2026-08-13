@@ -14,7 +14,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
       <div className="flex h-[60px] items-center justify-between gap-3 px-4">
         <div className="flex items-center gap-3">
-          <button aria-label="menu" onClick={() => setOpen(true)} className="flex h-10 w-10 items-center justify-center rounded-full text-xl text-textPrimary">☰</button>
+          <button aria-label="menu" onClick={() => setOpen(true)} className="flex h-12 w-12 min-h-[48px] min-w-[48px] items-center justify-center rounded-full text-xl text-textPrimary">☰</button>
           <Link href="/" className="flex items-center gap-2">
             <div className="relative h-10 w-10">
               <Image src="/images/coursePic/logo.png" alt="logo" fill style={{ objectFit: 'contain' }} />
@@ -25,9 +25,9 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <div className="hidden sm:block">
-            <input aria-label="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search courses, PDFs..." className="rounded-xl border border-border px-3 py-2 w-[220px] text-sm" />
+             <input aria-label="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search courses, PDFs..." className="rounded-[16px] border border-border px-3 py-2 w-[220px] text-sm" />
           </div>
-          <button aria-label="notifications" className="relative flex h-11 w-11 items-center justify-center rounded-full bg-slate-100 text-lg text-textPrimary">
+          <button aria-label="notifications" className="relative flex h-12 w-12 min-h-[48px] min-w-[48px] items-center justify-center rounded-full bg-slate-100 text-lg text-textPrimary">
             🔔
             <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-danger px-1 text-[10px] font-bold text-white">3</span>
           </button>

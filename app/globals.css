@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-hind: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  --font-hind: 'Noto Sans Bengali', sans-serif;
 
   --color-primary: #2563EB;
   --color-primary-dark: #1D4ED8;
@@ -33,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,

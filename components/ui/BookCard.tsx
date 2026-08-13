@@ -18,14 +18,14 @@ export default function BookCard({ thumbnail, title, subtitle, price, oldPrice, 
   const imageSrc = thumbnail.startsWith('/') ? thumbnail : `/${thumbnail}`
 
   return (
-    <article className="overflow-hidden rounded-[20px] border border-border bg-white shadow-card">
+    <article className="overflow-hidden rounded-[16px] border border-border bg-white shadow-card">
       <div className="relative h-44 w-full overflow-hidden bg-slate-100">
         <Image src={imageSrc} alt={title} fill style={{ objectFit: 'cover' }} />
       </div>
       <div className="space-y-3 p-4">
         <div className="flex items-center justify-between gap-3">
           <div className="space-y-1">
-            <h3 className="text-base font-semibold text-textPrimary">{title}</h3>
+            <h3 className="text-lg font-semibold text-textPrimary">{title}</h3>
             {subtitle ? <p className="text-sm text-textSecondary">{subtitle}</p> : null}
           </div>
           {badge ? (

@@ -47,7 +47,7 @@ export default function MockTestSection() {
         {!started ? (
           <div className="space-y-4">
             <div>
-              <h3 className="text-xl font-semibold">Mock Test Preparation</h3>
+               <h3 className="text-[22px] font-semibold">Mock Test Preparation</h3>
               <p className="mt-2 text-sm text-textSecondary">আপনার নাম লিখুন এবং ১০ টি প্রশ্নের র‍্যান্ডম কুইজ শুরু করুন।</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
@@ -100,11 +100,11 @@ export default function MockTestSection() {
                   {quiz.questions[quiz.current].options.map((option, idx) => {
                     const selected = quiz.answers[quiz.current] === idx
                     return (
-                      <button
-                        key={option}
-                        onClick={() => quiz.selectAnswer(idx)}
-                        className={`w-full rounded-[16px] border px-4 py-3 text-left transition ${selected ? 'border-primary bg-primary/10' : 'border-border bg-white'}`}
-                      >
+                       <button
+                         key={option}
+                         onClick={() => quiz.selectAnswer(idx)}
+                         className={`w-full min-h-[48px] rounded-[16px] border px-4 py-3 text-left transition ${selected ? 'border-primary bg-primary/10' : 'border-border bg-white'}`}
+                       >
                         <span className="font-semibold">{String.fromCharCode(65 + idx)}.</span> {option}
                       </button>
                     )

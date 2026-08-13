@@ -7,8 +7,8 @@ export default function BlogGrid() {
       <h2 className="text-[22px] font-bold text-textPrimary">Blog</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
         {posts.map(p => (
-          <article key={p.id} className="rounded-[12px] border border-border bg-white p-3 shadow-card">
-            <h3 className="font-semibold text-textPrimary">{p.title}</h3>
+          <article key={p.id} className="rounded-[16px] border border-border bg-white p-4 shadow-card">
+            <h3 className="text-lg font-semibold text-textPrimary">{p.title}</h3>
             <p className="text-sm text-textSecondary mt-2">{p.excerpt}</p>
           </article>
         ))}

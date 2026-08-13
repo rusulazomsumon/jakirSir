@@ -13,7 +13,7 @@ export default function VideoLibrary(){
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
         {videos.map((video) => (
-          <article key={video.id} className="overflow-hidden rounded-[24px] border border-border bg-white shadow-card">
+          <article key={video.id} className="overflow-hidden rounded-[16px] border border-border bg-white shadow-card">
             <div className="aspect-video">
               <iframe
                 className="h-full w-full"
@@ -26,7 +26,7 @@ export default function VideoLibrary(){
               />
             </div>
             <div className="space-y-2 p-4">
-              <h3 className="text-base font-semibold text-textPrimary">{video.title}</h3>
+              <h3 className="text-lg font-semibold text-textPrimary">{video.title}</h3>
               {video.description ? <p className="text-sm text-textSecondary">{video.description}</p> : null}
             </div>
           </article>

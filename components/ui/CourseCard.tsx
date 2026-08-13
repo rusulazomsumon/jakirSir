@@ -30,7 +30,7 @@ export default function CourseCard({
   const imageSrc = thumbnail.startsWith('/') ? thumbnail : `/${thumbnail}`
 
   return (
-    <article className="min-w-[260px] overflow-hidden rounded-[20px] border border-border bg-white shadow-card">
+    <article className="min-w-[260px] overflow-hidden rounded-[16px] border border-border bg-white shadow-card">
       <div className="relative h-44 w-full overflow-hidden bg-slate-100">
         <Image src={imageSrc} alt={title} fill style={{ objectFit: 'cover' }} />
         {badge ? (

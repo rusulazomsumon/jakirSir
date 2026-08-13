@@ -15,7 +15,7 @@ export default function PDFCard({ title, size = '1.2MB', free = true, onDownload
     <div className="rounded-[16px] border border-border bg-white p-4 shadow-card">
       <div className="flex items-center justify-between">
         <div>
-          <p className="font-semibold text-textPrimary">{title}</p>
+          <p className="text-lg font-semibold text-textPrimary">{title}</p>
           <p className="text-xs text-textSecondary">{size}</p>
         </div>
         <div className="flex flex-col items-end gap-2">

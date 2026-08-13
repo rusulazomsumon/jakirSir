@@ -19,7 +19,7 @@ export default function Header() {
       <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between px-4 sm:px-5 md:px-6 lg:px-8">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-[78px] w-[78px] overflow-hidden rounded-[16px] bg-slate-100">
+            <div className="relative h-[60px] w-[60px] overflow-hidden rounded-[16px] bg-slate-100">
               <Image src="/images/jakirSirSmartEdu.logo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
             </div>
             <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
