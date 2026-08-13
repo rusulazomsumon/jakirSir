@@ -98,7 +98,7 @@ export default function ComingSoonPage() {
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-primary" />
               </span>
               <span className="font-sans text-sm font-semibold text-primary">
-                Platform Launching Soon
+                শুভ উদ্বোধন! আজ ১৩/০৮/২০২৬ রাত ১০ টায়! 
               </span>
             </div>
           </div>
