@@ -18,7 +18,6 @@ export type CourseCardProps = {
 export default function CourseCard({
   category = 'Course',
   title,
-  description,
   duration,
   students,
   price,

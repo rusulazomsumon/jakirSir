@@ -24,7 +24,7 @@
       "options": ["৮টি", "১০টি", "৭টি", "৯টি"],
       "ans": 1,
       "explain": "বাংলা বর্ণমালায় ১০টি মাত্রাহীন বর্ণ রয়েছে (স্বরবর্ণ ৪টি, ব্যঞ্জনবর্ণ ৬টি)। [১৪০]",
-      "source": ["Biddabari PDF"]
+      "source": ["DSS Exam"]
     },
     {
       "id": 3,
@@ -84,7 +84,7 @@
       "options": ["১ সেকেন্ড", "১ বলতে যে সময় লাগে তার দ্বিগুণ", "থামার প্রয়োজন নেই", "এক বলতে যে সময় লাগে"],
       "ans": 1,
       "explain": "সেমিকোলনে কমা অপেক্ষা দ্বিগুণ সময় বিরতি নিতে হয়। [১৪১]",
-      "source": ["Biddabari PDF"]
+      "source": ["DSS Exam"]
     },
     {
       "id": 9,
@@ -174,7 +174,7 @@
       "options": ["রবীন্দ্রনাথ ঠাকুর", "জসীম উদ্দীন", "কায়কোবাদ", "শামসুর রাহমান"],
       "ans": 1,
       "explain": "এটি পল্লীকবি জসীম উদ্দীনের একটি শ্রেষ্ঠ আখ্যান কাব্য। [১৪১]",
-      "source": ["Biddabari PDF"]
+      "source": ["DSS Exam"]
     },
     {
       "id": 18,
@@ -364,7 +364,7 @@
       "options": ["are", "is", "were", "have"],
       "ans": 1,
       "explain": "News শব্দটি দেখতে plural হলেও এটি সবসময় singular verb গ্রহণ করে। [১৪৩]",
-      "source": ["Biddabari PDF"]
+      "source": ["DSS Exam"]
     },
     {
       "id": 37,
@@ -414,7 +414,7 @@
       "options": ["৮টি", "৯টি", "১০টি", "১১টি"],
       "ans": 2,
       "explain": "২ ও ৩২ এর মধ্যবর্তী মৌলিক সংখ্যাগুলো হলো ৩, ৫, ৭, ১১, ১৩, ১৭, ১৯, ২৩, ২৯, ৩১। [৬৫]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 42,
@@ -424,7 +424,7 @@
       "options": ["২৩", "২৪.৫", "২৫", "২৫.৫"],
       "ans": 2,
       "explain": "গড় = (১ম পদ + শেষ পদ) / ২ = (১ + ৪৯) / ২ = ২৫। [৪১]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 43,
@@ -434,7 +434,7 @@
       "options": ["১৫%", "২০%", "২৫%", "৩০%"],
       "ans": 1,
       "explain": "সূত্র: (১০০ x বৃদ্ধি) / (১০০ + বৃদ্ধি) = (১০০ x ২৫) / ১২৫ = ২০%। [৪২]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 44,
@@ -444,7 +444,7 @@
       "options": ["৭ দিন", "৫ দিন", "১০ দিন", "১ দিন"],
       "ans": 1,
       "explain": "৫ জন ৫টি বুনতে সময় নেয় ৫ দিন। ১ জন ১টি বুনতে সময় নেয় ৫ দিন। ৭ জন ৭টি বুনতে সময় নেবে ৫ দিন। [৮৪]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 45,
@@ -454,7 +454,7 @@
       "options": ["৩০%", "৩৩%", "৫০%", "৪০%"],
       "ans": 2,
       "explain": "লাভ = (৩ - ২) / ২ x ১০০ = ৫০%। [৪১]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 46,
@@ -464,7 +464,7 @@
       "options": ["৬৫০ টাকা", "৭০০ টাকা", "৭৫০ টাকা", "৮০০ টাকা"],
       "ans": 1,
       "explain": "আসল = (সুদআসল x ১০০) / (১০০ + হার x সময়) = (৮২৬ x ১০০) / ১১৮ = ৭০০। [৫৭]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 47,
@@ -474,7 +474,7 @@
       "options": ["৩৬", "৪৮", "৭২", "৯৬"],
       "ans": 2,
       "explain": "১২, ১৮ ও ২৪ এর ল.সা.গু হলো ৭২। [৭৩]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 48,
@@ -494,7 +494,7 @@
       "options": ["সমবাহু", "সমকোণী", "স্থূলকোণী", "সূক্ষ্মকোণী"],
       "ans": 1,
       "explain": "১৭^২ = ২৮৯ এবং ১৫^২ + ৮^২ = ২২৫ + ৬৪ = ২৮৯। এটি পিথাগোরাস মেনে চলে। [৯১]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 50,
@@ -504,7 +504,7 @@
       "options": ["৩ গুণ", "৬ গুণ", "৯ গুণ", "১২ গুণ"],
       "ans": 2,
       "explain": "ব্যাস ৩ গুণ বাড়লে ব্যাসার্ধও ৩ গুণ বাড়ে। ক্ষেত্রফল হয় (৩)^২ = ৯ গুণ। [৮০]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 51,
@@ -514,7 +514,7 @@
       "options": ["৪৯", "৯৮", " ১৯৬", "১৪৬"],
       "ans": 1,
       "explain": "বর্গের কর্ণ = বৃত্তের ব্যাস = ১৪ সেমি। ক্ষেত্রফল = (কর্ণ)^২ / ২ = ১৪^২ / ২ = ৯৮। [৮০]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 52,
@@ -544,7 +544,7 @@
       "options": ["১২", "১০", "৬", "৮"],
       "ans": 0,
       "explain": "২ab = (a+b)^২ - (a^2+b^2) = ৭^২ - ২৫ = ২৪। ab = ১২। [৭৫]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 55,
@@ -554,7 +554,7 @@
       "options": ["১", "২", "৩", "৪"],
       "ans": 2,
       "explain": "মান = (১)^৩ + ৩(১)(১) = ১ + ৩ = ৪। [৯০]",
-      "source": ["All bcs-math-solutions PDF"]
+      "source": ["Acchive Job QB"]
     },
     {
       "id": 56,
