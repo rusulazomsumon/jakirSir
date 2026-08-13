@@ -17,9 +17,9 @@ export default function PopularCourses() {
         </div>
         <a href="#" className="text-sm font-semibold text-primary">সব দেখুন</a>
       </div>
-      <Swiper modules={[Autoplay]} slidesPerView="auto" spaceBetween={16} className="px-2 pb-3">
+      <Swiper modules={[Autoplay]} slidesPerView={1.25} spaceBetween={12} loop autoplay={{ delay: 3500, disableOnInteraction: false }} breakpoints={{ 640: { slidesPerView: 2, spaceBetween: 16 }, 768: { slidesPerView: 3, spaceBetween: 16 }, 1024: { slidesPerView: 4, spaceBetween: 16 } }} className="px-2 pb-3">
         {popularCourses.map((course) => (
-          <SwiperSlide key={course.id} style={{ width: 300 }}>
+          <SwiperSlide key={course.id}>
             <CourseCard
               thumbnail={course.image}
               category={course.category}

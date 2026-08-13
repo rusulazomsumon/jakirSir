@@ -24,8 +24,8 @@ export default function HomePage() {
         <Header />
         <div className="px-2">
           <Hero />
-          <RunningCourses />
           <QuickTools />
+          <RunningCourses />
           <LearningHub />
           <PopularCourses />
           <InstantMCQ />
