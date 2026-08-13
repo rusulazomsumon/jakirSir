@@ -3,6 +3,8 @@ import { Noto_Sans_Bengali } from 'next/font/google'
 import './globals.css'
 import ToastProvider from '@/components/ui/ToastProvider'
 import ThemeProvider from '@/components/ui/ThemeProvider'
+import Header from '@/components/layout/Header'
+import Footer from '@/components/home/Footer'
 
 const noto = Noto_Sans_Bengali({
   subsets: ['latin', 'bengali'],
@@ -30,10 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-background text-textPrimary antialiased">
         <ThemeProvider>
           <ToastProvider>
-            <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-5 md:px-6 lg:px-8 pb-20">
-              {/* SearchProvider wraps app to share search state between header and lists */}
+            <Header />
+            <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {children}
-            </div>
+            </main>
+            <Footer />
           </ToastProvider>
         </ThemeProvider>
       </body>
