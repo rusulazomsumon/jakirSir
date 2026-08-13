@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { ExamData, Question } from '@/types/exam'
 import { calculateResults, calculateSimulatedRank, ExamResult, SimulatedRank } from '@/utils/examEngine'
 import { formatTime, toBanglaNum } from '@/utils/formatters'
@@ -15,6 +16,7 @@ type ExamContainerProps = {
 }
 
 export default function ExamContainer({ examData }: ExamContainerProps) {
+  const router = useRouter()
   const [step, setStep] = useState<Step>('RULES_INTRO')
   const [candidateName, setCandidateName] = useState('')
   const [userAnswers, setUserAnswers] = useState<Record<number, number>>({})
@@ -46,6 +48,11 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
   const handleSubmitExam = () => {
     setIsSubmitting(true)
     setStep('RESULT_ANALYTICS')
+  }
+
+  const handleBackToHome = () => {
+    router.push('/')
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
   }
 
   const result: ExamResult | null = useMemo(() => {
@@ -87,6 +94,12 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
       handleSubmitExam()
     }
   }, [step, elapsedSeconds, totalSeconds, isSubmitting])
+
+  useEffect(() => {
+    if (step === 'RESULT_ANALYTICS') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    }
+  }, [step])
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 pb-24 pt-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -289,7 +302,7 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
             <h3 className="text-lg font-semibold text-slate-900">Answer Key</h3>
             <div className="mt-4 space-y-2">
               {questions.map((question, idx) => {
-                const userAnswer = userAnswers[idx]
+                const userAnswer = userAnswers[question.id]
                 const isCorrect = userAnswer === question.ans
                 const isSkipped = userAnswer === undefined
                 return (
@@ -312,11 +325,25 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
                     <p className="text-xs text-slate-600">
                       Correct: {String.fromCharCode(65 + question.ans)}. {question.options[question.ans]}
                     </p>
+                    {question.explain && (
+                      <div className="mt-3 p-3 bg-slate-50 border-l-4 border-[#2563EB] rounded-r-xl text-xs sm:text-sm text-slate-700 font-medium">
+                        <span className="font-bold text-[#2563EB]">ব্যাখ্যা: </span>
+                        {question.explain}
+                      </div>
+                    )}
                   </div>
                 )
               })}
             </div>
           </div>
+
+          <button
+            type="button"
+            onClick={handleBackToHome}
+            className="w-full rounded-2xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-[#1D4ED8]"
+          >
+            হোমে ফিরে যান
+          </button>
         </section>
       )}
     </div>

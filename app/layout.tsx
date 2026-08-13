@@ -1,6 +1,6 @@
+import './globals.css'
 import type { Metadata } from 'next'
 import { Noto_Sans_Bengali } from 'next/font/google'
-import './globals.css'
 import ToastProvider from '@/components/ui/ToastProvider'
 import ThemeProvider from '@/components/ui/ThemeProvider'
 import Header from '@/components/layout/Header'

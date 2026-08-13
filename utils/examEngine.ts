@@ -27,8 +27,8 @@ export function calculateResults(
   let totalWrong = 0
   let totalSkipped = 0
 
-  questions.forEach((question, index) => {
-    const userAnswer = userAnswers[index]
+  questions.forEach((question) => {
+    const userAnswer = userAnswers[question.id]
     if (userAnswer === undefined || userAnswer === null) {
       totalSkipped++
     } else if (userAnswer === question.ans) {
@@ -55,24 +55,6 @@ export function calculateResults(
   }
 }
 
-function erf(x: number): number {
-  const sign = x >= 0 ? 1 : -1
-  const ax = Math.abs(x)
-  const a1 = 0.254829592
-  const a2 = -0.284496736
-  const a3 = 1.421413741
-  const a4 = -1.453152027
-  const a5 = 1.061405429
-  const p = 0.3275911
-  const t = 1.0 / (1.0 + p * ax)
-  const y = 1.0 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * Math.exp(-ax * ax)
-  return sign * y
-}
-
-function normalCDF(x: number): number {
-  return 0.5 * (1.0 + erf(x / Math.sqrt(2.0)))
-}
-
 export function calculateSimulatedRank(
   score: number,
   totalMarks: number,
@@ -80,18 +62,30 @@ export function calculateSimulatedRank(
   baseParticipants: number = 2000
 ): SimulatedRank {
   const totalParticipants = baseParticipants + Math.floor(Math.random() * 50)
+  const safeTotalMarks = totalMarks > 0 ? totalMarks : 100
+  const cutRatio = cutMark / safeTotalMarks
 
-  const range = totalMarks - cutMark
-  const stdDev = Math.max(range / 3, 1)
-  const mean = cutMark - 0.524 * stdDev
+  // Logistic mapping: candidate's score ratio -> percentile.
+  // Centered slightly below the cutMark ratio so a score equal to the cut mark
+  // lands near the ~70th percentile. Bounded so it never collapses to a
+  // degenerate 0.0% / rank === totalParticipants result.
+  const k = 10
+  const center = cutRatio - 0.0847
+  const ratio = Math.max(0, Math.min(1, score / safeTotalMarks))
+  const percentile = 100 / (1 + Math.exp(-k * (ratio - center)))
 
-  const z = (score - mean) / stdDev
-  const percentile = normalCDF(z) * 100
-  const rank = Math.max(1, Math.round(totalParticipants * (1 - percentile / 100)))
+  const clampedPercentile = Math.max(1, Math.min(99, percentile))
+  const rank = Math.max(
+    1,
+    Math.min(
+      totalParticipants - 1,
+      Math.round(totalParticipants * (1 - clampedPercentile / 100))
+    )
+  )
 
   return {
-    rank: Math.min(rank, totalParticipants),
+    rank,
     totalParticipants,
-    percentile: Math.max(0, Math.min(100, percentile))
+    percentile: clampedPercentile
   }
 }

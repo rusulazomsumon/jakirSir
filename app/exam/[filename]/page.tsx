@@ -66,7 +66,10 @@ export default function ExamRunnerPage() {
           <p className="text-sm text-red-600">{error || 'ডেটা পাওয়া যায়নি।'}</p>
           <button
             type="button"
-            onClick={() => router.push('/model-test')}
+            onClick={() => {
+              router.push('/model-test')
+              window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+            }}
             className="mt-4 rounded-2xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700"
           >
             মডেল টেস্টে ফিরে যান
