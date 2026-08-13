@@ -84,7 +84,7 @@ export default function ComingSoonPage() {
           </div>
 
           <h1 className="mt-8 text-center font-sans text-2xl font-bold text-textPrimary sm:text-3xl lg:text-4xl">
-            Jakir Sir SMART Edu Portal
+            jakiredu.com - Jakir Sir SMART Edu Portal
           </h1>
 
           <p className="mt-3 text-center font-sans text-base text-textSecondary sm:text-lg">
@@ -107,33 +107,30 @@ export default function ComingSoonPage() {
 
           <div className="my-8 h-px w-full bg-border" />
 
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="flex flex-row justify-center items-center gap-4">
             <a
               href="https://wa.me/8801914690469"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 font-sans text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:brightness-110 active:scale-95 sm:w-auto"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:brightness-110 hover:scale-110"
             >
               <WhatsAppIcon />
-              <span>+880 1914-690469</span>
             </a>
             <a
               href="https://web.facebook.com/JakirSirOfficial"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#1877F2] px-5 py-3 font-sans text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:brightness-110 active:scale-95 sm:w-auto"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#1877F2] text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:brightness-110 hover:scale-110"
             >
               <FacebookIcon />
-              <span>Facebook</span>
             </a>
             <a
               href="https://www.youtube.com/@JakirSirOfficial-u9z"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF0000] px-5 py-3 font-sans text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:brightness-110 active:scale-95 sm:w-auto"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#FF0000] text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:brightness-110 hover:scale-110"
             >
               <YouTubeIcon />
-              <span>YouTube</span>
             </a>
           </div>
 
