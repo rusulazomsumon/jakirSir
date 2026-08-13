@@ -3,7 +3,10 @@
     "examName": "সমাজসেবা অধিদপ্তর ইউনিয়ন সমাজকর্মী নিয়োগ পরীক্ষা ২০১৬",
     "examType": "preliminary",
     "totalMarks": "70",
-    "totalQuestions": 70
+    "totalQuestions": 70,
+     "cutMark": 50,
+    "negativeMarkPerWrong": 0,
+    "durationMinutes": 60
   },
   "questions": [
     {

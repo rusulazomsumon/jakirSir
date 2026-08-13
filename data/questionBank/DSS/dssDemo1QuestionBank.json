@@ -3,7 +3,10 @@
     "examName": "DSS ইউনিয়ন সমাজকর্মী Demo Model Test 1",
     "examType": "preliminary",
     "totalMarks": "70",
-    "totalQuestions": 70
+    "totalQuestions": 70,
+    "cutMark": 50,
+    "negativeMarkPerWrong": 0,
+    "durationMinutes": 60
   },
   "questions": [
     {
