@@ -45,7 +45,7 @@ module.exports = {
         touch: '48px'
       },
       fontFamily: {
-        sans: ['var(--font-hind)', 'Noto Sans Bengali', 'sans-serif']
+        sans: ['var(--font-noto)', 'Noto Sans Bengali', 'sans-serif']
       }
     }
   },

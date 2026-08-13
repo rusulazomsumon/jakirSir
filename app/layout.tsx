@@ -1,25 +1,24 @@
 import type { Metadata } from 'next'
-import { Hind_Siliguri } from 'next/font/google'
+import { Noto_Sans_Bengali } from 'next/font/google'
 import './globals.css'
 import ToastProvider from '@/components/ui/ToastProvider'
 import ThemeProvider from '@/components/ui/ThemeProvider'
 
-const hindSiliguri = Hind_Siliguri({
-  subsets: ['latin', 'bengali'],
+const noto = Noto_Sans_Bengali({
+  subsets: ['bengali', 'latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-hind',
+  variable: '--font-noto',
   display: 'swap'
 })
 
 export const metadata: Metadata = {
   title: 'Jakir Sir SMART Edu Portal',
-  description:
-    'Bangladesh’s first mobile-first smart education platform for bank and government job preparation.'
+  description: `Bangladesh's first mobile-first smart education platform for bank and government job preparation.`
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="bn" className={hindSiliguri.variable}>
+    <html lang="bn" className={noto.variable}>
       <body className="min-h-screen bg-background text-textPrimary antialiased">
         <ThemeProvider>
           <ToastProvider>
