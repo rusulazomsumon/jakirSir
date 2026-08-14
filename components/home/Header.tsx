@@ -68,7 +68,7 @@ export default function Header() {
           </div>
           <nav className="flex flex-col gap-2">
             <Link href="/" className="py-2">Home</Link>
-            <Link href="/courses" className="py-2">Courses</Link>
+            <Link href="/all-courses" className="py-2">Courses</Link>
             <button onClick={() => { openModal(); setOpen(false) }} className="py-2 text-left w-full">MCQ</button>
             <Link href="/dashboard" className="py-2">Dashboard</Link>
             <Link href="/more" className="py-2">More</Link>

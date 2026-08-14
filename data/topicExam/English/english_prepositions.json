@@ -1,0 +1,370 @@
+{
+  "examInfo": {
+    "examName": "English - Appropriate Prepositions - (All Gov. Job)",
+    "examType": "preliminary",
+    "totalMarks": "20",
+    "totalQuestions": 20,
+    "cutMark": 12,
+    "negativeMarkPerWrong": 0.25,
+    "durationMinutes": 15
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "He has a great appetite ___ knowledge.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "of"
+      ],
+      "ans": 0,
+      "explain": "Appetite for = কোনো কিছুর প্রতি ক্ষুধা/আগ্রহ। বাংলা: জ্ঞানের প্রতি তার প্রবল আগ্রহ আছে।",
+      "source": [
+        "BCS-৩০",
+        "Bank-2019"
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "You must conform ___ the rules of the institution.",
+      "options": [
+        "with",
+        "to",
+        "for",
+        "by"
+      ],
+      "ans": 1,
+      "explain": "Conform to = নিয়ম মেনে চলা। Conform with = কারো সাথে মিলে যাওয়া। Rules এর সাথে to হয়।",
+      "source": [
+        "BCS-৩৫",
+        "NTRCA 14th"
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "He was introduced ___ the chairman.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "by"
+      ],
+      "ans": 0,
+      "explain": "Introduce to a person = কারো সাথে পরিচয় করিয়ে দেওয়া। Introduce into = কোনো স্থানে প্রবেশ করানো।",
+      "source": [
+        "BCS-28",
+        "Primary-2019"
+      ]
+    },
+    {
+      "id": 4,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "He conforms ___ my opinion.",
+      "options": [
+        "with",
+        "to",
+        "for",
+        "in"
+      ],
+      "ans": 0,
+      "explain": "Conform with = কারো মতের সাথে একমত হওয়া। ব্যক্তির মতের সাথে with হয়।",
+      "source": [
+        "Bank-2018",
+        "Somajsheba-2018"
+      ]
+    },
+    {
+      "id": 5,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "The book was introduced ___ the market last week.",
+      "options": [
+        "into",
+        "to",
+        "in",
+        "for"
+      ],
+      "ans": 0,
+      "explain": "Introduce into = বাজারে / কোথাও নতুন কিছু আনা। Person হলে to, place/market হলে into।",
+      "source": [
+        "BCS-33",
+        "NTRCA 15th"
+      ]
+    },
+    {
+      "id": 6,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "I have no appetite ___ food today.",
+      "options": [
+        "for",
+        "to",
+        "of",
+        "in"
+      ],
+      "ans": 0,
+      "explain": "Appetite for + noun সবসময় for হয়।",
+      "source": [
+        "Primary-2022",
+        "Bank Cash-2020"
+      ]
+    },
+    {
+      "id": 7,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "We should conform ___ the customs of the society.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "by"
+      ],
+      "ans": 0,
+      "explain": "Customs, rules, regulations, law - এগুলোর সাথে conform to বসে।",
+      "source": [
+        "BCS-36",
+        "Somajsheba-2022"
+      ]
+    },
+    {
+      "id": 8,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "Let me introduce my friend ___ you.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "by"
+      ],
+      "ans": 0,
+      "explain": "Introduce somebody to somebody = একজনকে আরেকজনের সাথে পরিচয় করানো।",
+      "source": [
+        "NTRCA 12th",
+        "Primary-2018"
+      ]
+    },
+    {
+      "id": 9,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "His actions do not conform ___ the agreement.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "in"
+      ],
+      "ans": 0,
+      "explain": "Agreement, terms, conditions এর সাথে conform to হয়।",
+      "source": [
+        "BCS-40",
+        "Bank-2019"
+      ]
+    },
+    {
+      "id": 10,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "She has a strong appetite ___ success.",
+      "options": [
+        "for",
+        "to",
+        "of",
+        "with"
+      ],
+      "ans": 0,
+      "explain": "Appetite for success = সফলতার জন্য তীব্র আকাঙ্ক্ষা।",
+      "source": [
+        "NTRCA 16th"
+      ]
+    },
+    {
+      "id": 11,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "He was introduced ___ smoking by his friends.",
+      "options": [
+        "to",
+        "into",
+        "with",
+        "for"
+      ],
+      "ans": 0,
+      "explain": "Introduce to + habit = কোনো অভ্যাসের সাথে পরিচিত করানো। He was introduced to smoking.",
+      "source": [
+        "BCS-38",
+        "Somajsheba-2019"
+      ]
+    },
+    {
+      "id": 12,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "Your conduct does not conform ___ our expectations.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "by"
+      ],
+      "ans": 0,
+      "explain": "Expectations, standards এর সাথে conform to।",
+      "source": [
+        "Primary-2021",
+        "NTRCA 13th"
+      ]
+    },
+    {
+      "id": 13,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "The new teacher was introduced ___ the class.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "in"
+      ],
+      "ans": 0,
+      "explain": "Class = group of persons, তাই introduce to the class।",
+      "source": [
+        "BCS-27",
+        "Bank-2017"
+      ]
+    },
+    {
+      "id": 14,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "She has no appetite ___ music.",
+      "options": [
+        "for",
+        "to",
+        "in",
+        "with"
+      ],
+      "ans": 0,
+      "explain": "Appetite for + noun = আগ্রহ। সবসময় for।",
+      "source": [
+        "Somajsheba Union-2018"
+      ]
+    },
+    {
+      "id": 15,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "They refused to conform ___ the new policy.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "by"
+      ],
+      "ans": 0,
+      "explain": "Policy, rule, law এর সাথে conform to।",
+      "source": [
+        "BCS-39",
+        "NTRCA 17th"
+      ]
+    },
+    {
+      "id": 16,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "I was introduced ___ her at the party.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "by"
+      ],
+      "ans": 0,
+      "explain": "Introduce to someone at somewhere।",
+      "source": [
+        "Primary-2015"
+      ]
+    },
+    {
+      "id": 17,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "He has an appetite ___ adventure.",
+      "options": [
+        "for",
+        "to",
+        "of",
+        "with"
+      ],
+      "ans": 0,
+      "explain": "Appetite for adventure = রোমাঞ্চের প্রতি আকর্ষণ।",
+      "source": [
+        "Bank-2020",
+        "BCS-41"
+      ]
+    },
+    {
+      "id": 18,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "We must conform ___ the decision of the majority.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "in"
+      ],
+      "ans": 0,
+      "explain": "Decision, opinion যদি system/rule হিসেবে থাকে তবে to, ব্যক্তির মত হিসেবে with। এখানে decision = to।",
+      "source": [
+        "BCS-32",
+        "Somajsheba-2023"
+      ]
+    },
+    {
+      "id": 19,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "He introduced a new method ___ farming.",
+      "options": [
+        "into",
+        "to",
+        "for",
+        "with"
+      ],
+      "ans": 0,
+      "explain": "Introduce into + field/activity = কোনো ক্ষেত্রে নতুন পদ্ধতি আনা।",
+      "source": [
+        "BCS-37",
+        "NTRCA 11th"
+      ]
+    },
+    {
+      "id": 20,
+      "subject": "English",
+      "topics": "Grammar - Appropriate Prepositions",
+      "q": "Which one is correct? - He has appetite ___ wealth.",
+      "options": [
+        "for",
+        "to",
+        "with",
+        "in"
+      ],
+      "ans": 0,
+      "explain": "Appetite for wealth = সম্পদের প্রতি লোভ। Appropriate preposition সবসময় for।",
+      "source": [
+        "BCS-26",
+        "Primary-2020"
+      ]
+    }
+  ]
+}

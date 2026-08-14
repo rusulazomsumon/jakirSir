@@ -55,13 +55,14 @@ const TikTokIcon = () => (
 )
 
 const menuLinks = [
-  { href: '/courses', label: 'All Course' },
-  { href: '/routine', label: 'Exam Routine' },
-  { href: '/central-exam', label: 'Central Exam' },
+  { href: '/all-courses', label: 'All Course' },
+  { href: '/', label: 'Exam Routine' },
+  { href: '/', label: 'Central Exam' },
+  { href: '/topic-wise-exam', label: 'টপিক ভিত্তিক কুইজ' },
   { href: '/model-test', label: 'Model Test' },
-  { href: '/resources', label: 'Resource' },
-  { href: '/job-news', label: 'চাকরি বার্তা' },
-  { href: '/blog', label: 'ব্লগ' }
+  { href: '/', label: 'Resource' },
+  { href: '/', label: 'চাকরি বার্তা' },
+  { href: '/', label: 'ব্লগ' }
 ]
 
 export default function Header() {
@@ -83,7 +84,14 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Swapped order: Logo first, then Menu icon button */}
         <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-10 w-10">
+              <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir Edu Logo" fill style={{ objectFit: 'contain' }} />
+            </div>
+            <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
+          </Link>
           <button
             type="button"
             aria-label="Menu"
@@ -92,11 +100,26 @@ export default function Header() {
           >
             <MenuIcon />
           </button>
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-10 w-10">
-              <Image src="/images/jakirSirSmartEdu.logo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
-            </div>
-            <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
+        </div>
+        {/* নতুন Nav Menu - Mobile + Desktop */}
+        <div className="flex flex-1 items-center justify-center gap-1 px-1">
+          <Link
+            href="/"
+            className="px-2 py-1 text-[10px] font-medium text-slate-600 hover:text-sky-600 transition-colors whitespace-nowrap"
+          >
+            Home
+          </Link>
+          <Link
+            href="/"
+            className="px-2 py-1 text-[10px] font-medium text-slate-600 hover:text-sky-600 transition-colors whitespace-nowrap"
+          >
+            Job Circular
+          </Link>
+          <Link
+            href="/all-courses"
+            className="rounded-full bg-[#8A2BE2] px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-sky-700 transition-colors whitespace-nowrap"
+          >
+            Enroll
           </Link>
         </div>
 
@@ -135,9 +158,9 @@ export default function Header() {
               <div className="flex items-center justify-between p-4 border-b border-border">
                 <div className="flex items-center gap-2">
                   <div className="relative h-8 w-8">
-                    <Image src="/images/jakirSirSmartEdu.logo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
+                    <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
                   </div>
-                  <span className="font-semibold text-slate-800 text-sm">Jakir Sir SMART Edu</span>
+                  <span className="font-semibold text-slate-800 text-sm">জাকির স্যার edu!</span>
                 </div>
                 <button
                   type="button"

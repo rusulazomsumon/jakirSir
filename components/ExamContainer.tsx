@@ -6,7 +6,6 @@ import { ExamData, Question } from '@/types/exam'
 import { calculateResults, calculateSimulatedRank, ExamResult, SimulatedRank } from '@/utils/examEngine'
 import { formatTime, toBanglaNum } from '@/utils/formatters'
 import Button from '@/components/ui/Button'
-import ExamHeader from '@/components/ExamHeader'
 import Modal from '@/components/ui/Modal'
 
 type Step = 'RULES_INTRO' | 'EXAM_RUNNING' | 'RESULT_ANALYTICS'
@@ -146,25 +145,22 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
 
       {step === 'EXAM_RUNNING' && (
         <>
-          <ExamHeader remainingSeconds={remainingSeconds} onTimeUp={handleSubmitExam} />
-
-          <div className="min-h-screen bg-slate-50 text-slate-900 pb-24 pt-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="sticky top-[60px] z-30 bg-white/95 backdrop-blur-md shadow-sm border border-[#EADBFF] rounded-2xl p-4 mb-4 transition-all">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-slate-500">বাকি সময়</p>
-                  <p className="text-lg font-semibold text-slate-900">{formatTime(remainingSeconds)}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-xs text-slate-500">উত্তর প্রদান</p>
-                  <p className="text-lg font-semibold text-slate-900">
-                    {toBanglaNum(answeredCount)} / {toBanglaNum(questions.length)}
-                  </p>
-                </div>
+          <div className="sticky top-[60px] z-30 bg-white/95 backdrop-blur-md shadow-sm border border-[#EADBFF] rounded-2xl p-4 mb-4 transition-all">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-xs text-slate-500">বাকি সময়</p>
+                <p className="text-lg font-semibold text-slate-900">{formatTime(remainingSeconds)}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-slate-500">উত্তর প্রদান</p>
+                <p className="text-lg font-semibold text-slate-900">
+                  {toBanglaNum(answeredCount)} / {toBanglaNum(questions.length)}
+                </p>
               </div>
             </div>
+          </div>
 
-            <div className="space-y-4">
+          <div className="space-y-4">
               {questions.map((question, idx) => {
                 const selected = userAnswers[question.id]
                 return (
@@ -244,8 +240,7 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
                 </div>
               </div>
             </Modal>
-          </div>
-        </>
+          </>
       )}
 
       {step === 'RESULT_ANALYTICS' && result && simulatedRank && (
@@ -255,7 +250,7 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
               <div>
                 <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">পরীক্ষার ফলাফল</h1>
                 <p className="mt-1 text-sm text-slate-500">
-                  {candidateName}, আপনার পরীক্ষার ফলাফল নিচে দেওয়া হলো।
+                  <span className="font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md">{candidateName}</span>, আপনার পরীক্ষার ফলাফল নিচে দেওয়া হলো।
                 </p>
               </div>
               <span
@@ -296,10 +291,40 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
               </p>
               <p className="mt-1 text-xs text-slate-500">Top {simulatedRank.percentile.toFixed(1)}%</p>
             </div>
+            {/* New Promotional & WhatsApp Div */}
+            <div className="border-t border-[#EADBFF] bg-[#FAF8FF] px-5 py-4 text-center sm:px-6">
+              <p className="text-xs font-medium leading-relaxed text-slate-700 sm:text-sm">
+                স্বপ্নটা কি সরকারি চাকরি?<br />
+                সমাধান - জাকির স্যারের গাইডলাইন<br />
+                ✅ ১০০% সিলেবাস কভার <br />
+                ✅ বিগত বছরের প্রশ্ন এনালাইসিস<br />
+                ✅ পরীক্ষার আগ পর্যন্ত সাপোর্ট<br />
+                🎉 স্পেশাল অফার: ৫০% ছাড়!<br />
+                সিট লিমিটেড। দেরি না করে এখনই ইনবক্স করুন।
+              </p>
+              
+              <a
+                href="https://wa.me/8801521496532"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#20bd5a] hover:shadow-md sm:text-sm"
+              >
+                {/* WhatsApp Icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-4 w-4 sm:h-5 sm:w-5"
+                >
+                  <path d="M12 2.25c-5.384 0-9.75 4.365-9.75 9.75 0 1.741.466 3.447 1.353 4.958L2.25 22.5l5.147-1.353A9.706 9.706 0 0012 21.75c5.384 0 9.75-4.365 9.75-9.75S17.384 2.25 12 2.25z" />
+                </svg>
+                <span>WhatsApp: ০১৫২১-৪৯৬৫৩২</span>
+              </a>
+            </div>
           </div>
 
           <div className="mt-6 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm sm:p-8">
-            <h3 className="text-lg font-semibold text-slate-900">Answer Key</h3>
+            <h3 className="text-lg font-semibold text-slate-900">ব্যাখ্যাসহ সঠিক উত্তর</h3>
             <div className="mt-4 space-y-2">
               {questions.map((question, idx) => {
                 const userAnswer = userAnswers[question.id]
@@ -331,6 +356,11 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
                         {question.explain}
                       </div>
                     )}
+                    {question.source && question.source.length > 0 && (
+                      <div className="mt-2 text-xs text-slate-500">
+                        পরীক্ষা: {question.source.join(', ')}
+                      </div>
+                    )}
                   </div>
                 )
               })}
@@ -343,6 +373,13 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
             className="w-full rounded-2xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-[#1D4ED8]"
           >
             হোমে ফিরে যান
+          </button>
+          <button
+            type="button"
+            onClick={() => router.push('/topic-wise-exam')}
+            className="w-full rounded-2xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-[#1D4ED8]"
+          >
+            আবার পরীক্ষা দিন
           </button>
         </section>
       )}
