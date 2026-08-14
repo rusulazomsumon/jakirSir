@@ -6,7 +6,6 @@ import { ExamData, Question } from '@/types/exam'
 import { calculateResults, calculateSimulatedRank, ExamResult, SimulatedRank } from '@/utils/examEngine'
 import { formatTime, toBanglaNum } from '@/utils/formatters'
 import Button from '@/components/ui/Button'
-import ExamHeader from '@/components/ExamHeader'
 import Modal from '@/components/ui/Modal'
 
 type Step = 'RULES_INTRO' | 'EXAM_RUNNING' | 'RESULT_ANALYTICS'
@@ -146,25 +145,22 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
 
       {step === 'EXAM_RUNNING' && (
         <>
-          <ExamHeader remainingSeconds={remainingSeconds} onTimeUp={handleSubmitExam} />
-
-          <div className="min-h-screen bg-slate-50 text-slate-900 pb-24 pt-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="sticky top-[60px] z-30 bg-white/95 backdrop-blur-md shadow-sm border border-[#EADBFF] rounded-2xl p-4 mb-4 transition-all">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-slate-500">বাকি সময়</p>
-                  <p className="text-lg font-semibold text-slate-900">{formatTime(remainingSeconds)}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-xs text-slate-500">উত্তর প্রদান</p>
-                  <p className="text-lg font-semibold text-slate-900">
-                    {toBanglaNum(answeredCount)} / {toBanglaNum(questions.length)}
-                  </p>
-                </div>
+          <div className="sticky top-[60px] z-30 bg-white/95 backdrop-blur-md shadow-sm border border-[#EADBFF] rounded-2xl p-4 mb-4 transition-all">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-xs text-slate-500">বাকি সময়</p>
+                <p className="text-lg font-semibold text-slate-900">{formatTime(remainingSeconds)}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-xs text-slate-500">উত্তর প্রদান</p>
+                <p className="text-lg font-semibold text-slate-900">
+                  {toBanglaNum(answeredCount)} / {toBanglaNum(questions.length)}
+                </p>
               </div>
             </div>
+          </div>
 
-            <div className="space-y-4">
+          <div className="space-y-4">
               {questions.map((question, idx) => {
                 const selected = userAnswers[question.id]
                 return (
@@ -244,8 +240,7 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
                 </div>
               </div>
             </Modal>
-          </div>
-        </>
+          </>
       )}
 
       {step === 'RESULT_ANALYTICS' && result && simulatedRank && (
