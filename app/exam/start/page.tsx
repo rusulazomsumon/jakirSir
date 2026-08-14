@@ -1,15 +1,16 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { useParams, useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { ExamData } from '@/types/exam'
 import { loadModelTestData } from '@/utils/jsonLoader'
 import ExamContainer from '@/components/ExamContainer'
 
-export default function ExamRunnerPage() {
-  const params = useParams()
+export default function ExamStartPage() {
   const router = useRouter()
-  const filename = params.filename as string
+  const searchParams = useSearchParams()
+  const subject = searchParams.get('subject') || 'bangla'
+  const topic = searchParams.get('topic') || 'General'
   const [examData, setExamData] = useState<ExamData | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -22,8 +23,8 @@ export default function ExamRunnerPage() {
         setIsLoading(true)
         setError(null)
 
-        const decodedFilename = decodeURIComponent(filename)
-        const data = await loadModelTestData(decodedFilename)
+        const fileName = 'combinedModelTest.json'
+        const data = await loadModelTestData(fileName)
 
         if (isMounted) {
           setExamData(data)
@@ -46,7 +47,7 @@ export default function ExamRunnerPage() {
     return () => {
       isMounted = false
     }
-  }, [filename])
+  }, [subject, topic])
 
   if (isLoading) {
     return (
@@ -67,12 +68,12 @@ export default function ExamRunnerPage() {
           <button
             type="button"
             onClick={() => {
-               router.push('/mock-test')
+              router.push('/mock-test')
               window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
             }}
             className="mt-4 rounded-2xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700"
           >
-            মডেল টেস্টে ফিরে যান
+            মক টেস্টে ফিরে যান
           </button>
         </div>
       </div>

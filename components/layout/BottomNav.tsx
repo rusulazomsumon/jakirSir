@@ -43,7 +43,7 @@ const MenuIcon = () => (
 
 const items: NavItem[] = [
   { label: 'Home', icon: <HomeIcon />, href: '/' },
-  { label: 'Courses', icon: <BookOpenIcon />, href: '/courses' },
+  { label: 'Courses', icon: <BookOpenIcon />, href: '/all-courses' },
   { label: 'MCQ', icon: <GridIcon />, href: '/mcq' },
   { label: 'Dashboard', icon: <UserIcon />, href: '/dashboard' },
   { label: 'More', icon: <MenuIcon />, href: '/more' }

@@ -21,14 +21,14 @@ export const tools: Tool[] = [
     label: "প্রশ্নব্যাংক",
     icon: "ri-book-open-line",
     color: "#2563EB",
-    link: "#questionBankSection",
+    link: "/question-bank",
   },
   {
     id: "mock-test",
     label: "মক টেস্ট",
     icon: "ri-checkbox-circle-line",
     color: "#22C55E",
-    link: "#mockTestSection",
+    link: "/mock-test",
   },
   {
     id: "books",
@@ -42,7 +42,7 @@ export const tools: Tool[] = [
     label: "সব কোর্স",
     icon: "ri-graduation-cap-line",
     color: "#F97316",
-    link: "#popularCourses",
+    link: "/all-courses",
   },
   {
     id: "gk",

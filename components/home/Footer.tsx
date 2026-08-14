@@ -6,9 +6,9 @@ import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const quickLinks = [
   { label: 'আমাদের সম্পর্কে', href: '/about' },
-  { label: 'চলমান কোর্সসমূহ', href: '/courses' },
+  { label: 'চলমান কোর্সসমূহ', href: '/all-courses' },
   { label: 'পরীক্ষা রুটিন', href: '/routine' },
-  { label: 'মডেল টেস্ট', href: '/model-test' },
+  { label: 'মডেল টেস্ট', href: '/mock-test' },
   { label: 'ব্লগ ও পরামর্শ', href: '/blog' },
   { label: 'যোগাযোগের ঠিকানা', href: '/contact' }
 ]
@@ -103,17 +103,31 @@ export default function Footer() {
           <div>
             <h4 className="text-base font-bold text-slate-800 mb-3">আমাদের সেবাসমূহ</h4>
             <ul className="space-y-2">
-              {services.map((service) => (
-                <li key={service}>
-                  {service === 'অনলাইন পরীক্ষা (Live MCQ)' ? (
-                    <button onClick={openModal} className="text-sm text-slate-600 hover:text-[#7C3AED] transition-colors">
-                      {service}
-                    </button>
-                  ) : (
+              {services.map((service) => {
+                if (service === 'অনলাইন পরীক্ষা (Live MCQ)') {
+                  return (
+                    <li key={service}>
+                      <button onClick={openModal} className="text-sm text-slate-600 hover:text-[#7C3AED] transition-colors">
+                        {service}
+                      </button>
+                    </li>
+                  )
+                }
+                if (service === 'প্রশ্নব্যাংক (Question Bank)') {
+                  return (
+                    <li key={service}>
+                      <Link href="/question-bank" className="text-sm text-slate-600 hover:text-[#7C3AED] transition-colors">
+                        {service}
+                      </Link>
+                    </li>
+                  )
+                }
+                return (
+                  <li key={service}>
                     <span className="text-sm text-slate-600">{service}</span>
-                  )}
-                </li>
-              ))}
+                  </li>
+                )
+              })}
             </ul>
           </div>
 

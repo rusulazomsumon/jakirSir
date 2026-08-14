@@ -9,14 +9,14 @@ import Image from 'next/image'
 import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const slides = [
-  { id: 1, img: '/images/SomajSebhaBanner.jpg', href: '/courses' },
-  { id: 2, img: '/images/BannerSomajShebaCourse.jpeg', href: '/courses' }
+  { id: 1, img: '/images/SomajSebhaBanner.jpg', href: '/all-courses' },
+  { id: 2, img: '/images/BannerSomajShebaCourse.jpeg', href: '/all-courses' }
 ]
 
 const quickActions = [
   { label: 'লাইভ MCQ', href: '/live-mcq', live: true },
-  { label: 'সকল কোর্স', href: '/courses' },
-  { label: 'মডেল টেস্ট', href: '/model-test' },
+  { label: 'সকল কোর্স', href: '/all-courses' },
+  { label: 'মডেল টেস্ট', href: '/mock-test' },
   { label: 'এক্সাম রুটিন', href: '/routine' }
 ]
 
