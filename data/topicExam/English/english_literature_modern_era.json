@@ -1,0 +1,371 @@
+{
+  "examInfo": {
+    "examName": "English Literature - Modern Era - (All Gov. Job)",
+    "examType": "preliminary",
+    "totalMarks": "20",
+    "totalQuestions": 20,
+    "cutMark": 12,
+    "negativeMarkPerWrong": 0.25,
+    "durationMinutes": 15
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Who is considered the most important poet of the Modern Era?",
+      "options": [
+        "T.S. Eliot",
+        "William Wordsworth",
+        "John Keats",
+        "Lord Byron"
+      ],
+      "ans": 0,
+      "explain": "T.S. Eliot (1888-1965) is the leading poet of Modernism. His work 'The Waste Land' (1922) is the landmark of modern poetry.",
+      "source": [
+        "BCS-35",
+        "NTRCA 14th"
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'The Waste Land' is written by?",
+      "options": [
+        "T.S. Eliot",
+        "W.B. Yeats",
+        "W.H. Auden",
+        "Ezra Pound"
+      ],
+      "ans": 0,
+      "explain": "The Waste Land (1922) is written by T.S. Eliot. It has 5 sections.",
+      "source": [
+        "BCS-33",
+        "Bank-2018"
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Who wrote the novel '1984'?",
+      "options": [
+        "George Orwell",
+        "Aldous Huxley",
+        "James Joyce",
+        "D.H. Lawrence"
+      ],
+      "ans": 0,
+      "explain": "1984 (1949) and Animal Farm (1945) are written by George Orwell. Modern dystopian literature.",
+      "source": [
+        "BCS-38",
+        "NTRCA 16th"
+      ]
+    },
+    {
+      "id": 4,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'Ulysses' is a novel by?",
+      "options": [
+        "James Joyce",
+        "Virginia Woolf",
+        "Joseph Conrad",
+        "E.M. Forster"
+      ],
+      "ans": 0,
+      "explain": "Ulysses (1922) by James Joyce is the most famous modernist novel. It uses stream of consciousness technique.",
+      "source": [
+        "BCS-37",
+        "Primary-2019"
+      ]
+    },
+    {
+      "id": 5,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Who is the author of 'Mrs. Dalloway'?",
+      "options": [
+        "Virginia Woolf",
+        "Jane Austen",
+        "Charlotte Bronte",
+        "Emily Bronte"
+      ],
+      "ans": 0,
+      "explain": "Mrs. Dalloway (1925) by Virginia Woolf. She is famous for stream of consciousness technique.",
+      "source": [
+        "BCS-32",
+        "NTRCA 15th"
+      ]
+    },
+    {
+      "id": 6,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Modern Era in English literature is generally considered from?",
+      "options": [
+        "1901-1939",
+        "1901-1965",
+        "1890-1945",
+        "1920-1945"
+      ],
+      "ans": 0,
+      "explain": "Modern Era is generally 1901-1939. After 1939 is Post-Modern Era. Some say 1890-1945.",
+      "source": [
+        "NTRCA 13th",
+        "BCS-30"
+      ]
+    },
+    {
+      "id": 7,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Which play is written by G.B. Shaw?",
+      "options": [
+        "Man and Superman",
+        "Murder in the Cathedral",
+        "The Birthday Party",
+        "Waiting for Godot"
+      ],
+      "ans": 0,
+      "explain": "Man and Superman (1903), Arms and the Man are by G.B. Shaw. He got Nobel in 1925.",
+      "source": [
+        "BCS-29",
+        "Bank-2019"
+      ]
+    },
+    {
+      "id": 8,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "W.B. Yeats won Nobel Prize in?",
+      "options": [
+        "1923",
+        "1925",
+        "1913",
+        "1945"
+      ],
+      "ans": 0,
+      "explain": "W.B. Yeats won Nobel in 1923 for literature. He is Irish poet of Modern Era.",
+      "source": [
+        "BCS-26",
+        "NTRCA 11th"
+      ]
+    },
+    {
+      "id": 9,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'The Old Man and the Sea' is written by?",
+      "options": [
+        "Ernest Hemingway",
+        "William Faulkner",
+        "F. Scott Fitzgerald",
+        "John Steinbeck"
+      ],
+      "ans": 0,
+      "explain": "Ernest Hemingway wrote The Old Man and the Sea (1952). He won Nobel in 1954.",
+      "source": [
+        "BCS-40",
+        "Primary-2020"
+      ]
+    },
+    {
+      "id": 10,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Who wrote 'A Passage to India'?",
+      "options": [
+        "E.M. Forster",
+        "Rudyard Kipling",
+        "George Orwell",
+        "Joseph Conrad"
+      ],
+      "ans": 0,
+      "explain": "A Passage to India (1924) by E.M. Forster deals with British India.",
+      "source": [
+        "BCS-34",
+        "NTRCA 17th"
+      ]
+    },
+    {
+      "id": 11,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'The Great Gatsby' is written by?",
+      "options": [
+        "F. Scott Fitzgerald",
+        "Ernest Hemingway",
+        "John Steinbeck",
+        "William Faulkner"
+      ],
+      "ans": 0,
+      "explain": "The Great Gatsby (1925) by F. Scott Fitzgerald is a classic of American Modernism.",
+      "source": [
+        "BCS-36",
+        "Bank-2020"
+      ]
+    },
+    {
+      "id": 12,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Which is the famous poem of W.H. Auden?",
+      "options": [
+        "The Unknown Citizen",
+        "The Second Coming",
+        "Ozymandias",
+        "Daffodils"
+      ],
+      "ans": 0,
+      "explain": "The Unknown Citizen (1939) by W.H. Auden is modern poem. The Second Coming is by Yeats.",
+      "source": [
+        "BCS-31",
+        "NTRCA 12th"
+      ]
+    },
+    {
+      "id": 13,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'Waiting for Godot' is a play by?",
+      "options": [
+        "Samuel Beckett",
+        "Harold Pinter",
+        "G.B. Shaw",
+        "T.S. Eliot"
+      ],
+      "ans": 0,
+      "explain": "Waiting for Godot (1953) by Samuel Beckett. It is Theatre of the Absurd.",
+      "source": [
+        "BCS-39",
+        "Somajsheba-2022"
+      ]
+    },
+    {
+      "id": 14,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Who is known as the father of stream of consciousness?",
+      "options": [
+        "James Joyce",
+        "Virginia Woolf",
+        "William James",
+        "Dorothy Richardson"
+      ],
+      "ans": 2,
+      "explain": "Term 'stream of consciousness' was first used by psychologist William James. In literature, James Joyce and Virginia Woolf popularized it.",
+      "source": [
+        "NTRCA 16th",
+        "BCS-35"
+      ]
+    },
+    {
+      "id": 15,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'Heart of Darkness' is written by?",
+      "options": [
+        "Joseph Conrad",
+        "E.M. Forster",
+        "Rudyard Kipling",
+        "George Orwell"
+      ],
+      "ans": 0,
+      "explain": "Heart of Darkness (1899) by Joseph Conrad. Considered early modernism.",
+      "source": [
+        "BCS-30",
+        "Bank-2017"
+      ]
+    },
+    {
+      "id": 16,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Which novel is NOT written by D.H. Lawrence?",
+      "options": [
+        "A Passage to India",
+        "Sons and Lovers",
+        "Women in Love",
+        "Lady Chatterley's Lover"
+      ],
+      "ans": 0,
+      "explain": "A Passage to India is by Forster. Other three are by D.H. Lawrence.",
+      "source": [
+        "BCS-32"
+      ]
+    },
+    {
+      "id": 17,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "'Sailing to Byzantium' is a poem by?",
+      "options": [
+        "W.B. Yeats",
+        "T.S. Eliot",
+        "W.H. Auden",
+        "Robert Frost"
+      ],
+      "ans": 0,
+      "explain": "Sailing to Byzantium (1928) and The Second Coming are famous poems by W.B. Yeats.",
+      "source": [
+        "BCS-41",
+        "NTRCA 15th"
+      ]
+    },
+    {
+      "id": 18,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Who wrote 'The Grapes of Wrath'?",
+      "options": [
+        "John Steinbeck",
+        "Ernest Hemingway",
+        "F. Scott Fitzgerald",
+        "William Faulkner"
+      ],
+      "ans": 0,
+      "explain": "The Grapes of Wrath (1939) by John Steinbeck won Pulitzer in 1940.",
+      "source": [
+        "BCS-37"
+      ]
+    },
+    {
+      "id": 19,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Modernism is characterized by?",
+      "options": [
+        "Stream of consciousness, fragmentation, pessimism",
+        "Heroic couplet and reason",
+        "Supernatural and emotion",
+        "Moral teaching"
+      ],
+      "ans": 0,
+      "explain": "Modernism features break with tradition, stream of consciousness, fragmentation, alienation, pessimism after WWI.",
+      "source": [
+        "NTRCA 13th",
+        "BCS-28"
+      ]
+    },
+    {
+      "id": 20,
+      "subject": "English",
+      "topics": "Literature - Modern Era",
+      "q": "Which work belongs to the Modern Era?",
+      "options": [
+        "The Waste Land (1922)",
+        "Paradise Lost (1667)",
+        "Pride and Prejudice (1813)",
+        "Hamlet (1603)"
+      ],
+      "ans": 0,
+      "explain": "The Waste Land (1922) is Modern. Paradise Lost is Neoclassical, Pride and Prejudice is Romantic era novel, Hamlet is Renaissance.",
+      "source": [
+        "BCS-40",
+        "Primary-2022"
+      ]
+    }
+  ]
+}
