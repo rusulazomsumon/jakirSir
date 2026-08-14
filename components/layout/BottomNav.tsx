@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 type NavItem = {
   label: string
@@ -50,12 +51,27 @@ const items: NavItem[] = [
 
 export default function BottomNav() {
   const pathname = usePathname()
+  const { openModal } = useSubjectSelection()
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-white">
       <div className="mx-auto flex max-w-[1280px] h-[64px] items-center justify-between px-4 sm:px-5 md:px-6 lg:px-8">
         {items.map((item) => {
           const active = pathname === item.href
+          if (item.href === '/mcq') {
+            return (
+              <button
+                key={item.href}
+                onClick={openModal}
+                className={`flex min-w-[0] flex-1 flex-col items-center justify-center gap-1 text-[11px] font-medium transition ${
+                  active ? 'text-[#7C3AED]' : 'text-textSecondary'
+                }`}
+              >
+                <span className="mb-0.5">{item.icon}</span>
+                <span className="truncate">{item.label}</span>
+              </button>
+            )
+          }
           return (
             <Link
               key={item.href}

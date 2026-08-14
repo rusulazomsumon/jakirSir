@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import Image from 'next/image'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const slides = [
   { id: 1, img: '/images/SomajSebhaBanner.jpg', href: '/courses' },
@@ -20,6 +21,8 @@ const quickActions = [
 ]
 
 export default function Hero() {
+  const { openModal } = useSubjectSelection()
+
   return (
     <section className="pt-4">
       <div className="overflow-hidden rounded-[24px] shadow-floating">
@@ -38,14 +41,25 @@ export default function Hero() {
         <div className="mt-2 p-3 sm:p-4">
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:flex md:flex-row md:justify-between md:items-center">
             {quickActions.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="inline-flex items-center justify-center gap-2 bg-[#F5F2FE] hover:bg-[#7C3AED] hover:text-white text-[#7C3AED] font-medium py-2 px-3 rounded-xl border border-[#EADBFF] transition-all text-xs sm:text-sm"
-              >
-                {item.live && <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span></span>}
-                {item.label}
-              </Link>
+              item.href === '/live-mcq' ? (
+                <button
+                  key={item.label}
+                  onClick={openModal}
+                  className="inline-flex items-center justify-center gap-2 bg-[#F5F2FE] hover:bg-[#7C3AED] hover:text-white text-[#7C3AED] font-medium py-2 px-3 rounded-xl border border-[#EADBFF] transition-all text-xs sm:text-sm"
+                >
+                  {item.live && <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span></span>}
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="inline-flex items-center justify-center gap-2 bg-[#F5F2FE] hover:bg-[#7C3AED] hover:text-white text-[#7C3AED] font-medium py-2 px-3 rounded-xl border border-[#EADBFF] transition-all text-xs sm:text-sm"
+                >
+                  {item.live && <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span></span>}
+                  {item.label}
+                </Link>
+              )
             ))}
           </div>
         </div>

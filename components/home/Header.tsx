@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { useSearch } from '@/components/context/SearchContext'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const MenuIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-5 w-5">
@@ -26,7 +26,7 @@ const CloseIcon = () => (
 
 export default function Header() {
   const [open, setOpen] = useState(false)
-  const { query, setQuery } = useSearch()
+  const { openModal } = useSubjectSelection()
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
@@ -44,9 +44,6 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="hidden sm:block">
-             <input aria-label="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search courses, PDFs..." className="rounded-[16px] border border-border px-3 py-2 w-[220px] text-sm" />
-          </div>
           <button aria-label="notifications" className="relative flex h-12 w-12 min-h-[48px] min-w-[48px] items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200">
             <BellIcon />
             <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-danger px-1 text-[10px] font-bold text-white">3</span>
@@ -72,7 +69,7 @@ export default function Header() {
           <nav className="flex flex-col gap-2">
             <Link href="/" className="py-2">Home</Link>
             <Link href="/courses" className="py-2">Courses</Link>
-            <Link href="/mcq" className="py-2">MCQ</Link>
+            <button onClick={() => { openModal(); setOpen(false) }} className="py-2 text-left w-full">MCQ</button>
             <Link href="/dashboard" className="py-2">Dashboard</Link>
             <Link href="/more" className="py-2">More</Link>
           </nav>

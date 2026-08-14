@@ -5,6 +5,7 @@ import ToastProvider from '@/components/ui/ToastProvider'
 import ThemeProvider from '@/components/ui/ThemeProvider'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/home/Footer'
+import { SubjectSelectionProvider } from '@/components/quiz/SubjectSelectionContext'
 
 const noto = Noto_Sans_Bengali({
   subsets: ['latin', 'bengali'],
@@ -32,11 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-background text-textPrimary antialiased">
         <ThemeProvider>
           <ToastProvider>
-            <Header />
-            <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {children}
-            </main>
-            <Footer />
+            <SubjectSelectionProvider>
+              <Header />
+              <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {children}
+              </main>
+              <Footer />
+            </SubjectSelectionProvider>
           </ToastProvider>
         </ThemeProvider>
       </body>

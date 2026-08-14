@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
 import { tools } from '@/data/tools'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const icons: Record<string, React.ReactNode> = {
   'ri-file-list-3-line': (
@@ -55,6 +58,8 @@ const icons: Record<string, React.ReactNode> = {
 }
 
 export default function QuickTools() {
+  const { openModal } = useSubjectSelection()
+
   return (
     <section className="pt-6">
       <div className="mb-3 px-2 flex items-center justify-between">
@@ -65,7 +70,8 @@ export default function QuickTools() {
         {tools.map((tool) => (
           <a
             key={tool.id}
-            href={tool.link}
+            href={tool.id === 'mcq' ? undefined : tool.link}
+            onClick={tool.id === 'mcq' ? (e) => { e.preventDefault(); openModal() } : undefined}
             className="group relative flex flex-col items-center justify-center rounded-[18px] border border-border bg-white p-4 text-center shadow-card transition hover:-translate-y-1"
           >
             <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-xl" style={{ color: tool.color }}>

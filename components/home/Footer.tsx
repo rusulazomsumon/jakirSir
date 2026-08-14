@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const quickLinks = [
   { label: 'আমাদের সম্পর্কে', href: '/about' },
@@ -52,6 +53,7 @@ const WhatsAppIcon = () => (
 
 export default function Footer() {
   const [email, setEmail] = useState('')
+  const { openModal } = useSubjectSelection()
 
   return (
     <footer className="w-full bg-[#F5F2FE] border-t border-[#EADBFF] mt-[100px]">
@@ -102,8 +104,14 @@ export default function Footer() {
             <h4 className="text-base font-bold text-slate-800 mb-3">আমাদের সেবাসমূহ</h4>
             <ul className="space-y-2">
               {services.map((service) => (
-                <li key={service} className="text-sm text-slate-600">
-                  {service}
+                <li key={service}>
+                  {service === 'অনলাইন পরীক্ষা (Live MCQ)' ? (
+                    <button onClick={openModal} className="text-sm text-slate-600 hover:text-[#7C3AED] transition-colors">
+                      {service}
+                    </button>
+                  ) : (
+                    <span className="text-sm text-slate-600">{service}</span>
+                  )}
                 </li>
               ))}
             </ul>

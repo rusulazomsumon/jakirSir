@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const MenuIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-5 w-5">
@@ -66,6 +67,7 @@ const menuLinks = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { openModal } = useSubjectSelection()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -149,16 +151,29 @@ export default function Header() {
 
               <div className="flex-1 overflow-y-auto p-4">
                 <nav className="flex flex-col gap-1">
-                  {menuLinks.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block py-3 px-4 rounded-lg text-slate-800 hover:bg-[#EADBFF] transition-colors"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {menuLinks.map((item) => {
+                    if (item.href === '/mcq') {
+                      return (
+                        <button
+                          key={item.href}
+                          onClick={() => { openModal(); setMobileMenuOpen(false) }}
+                          className="block py-3 px-4 rounded-lg text-slate-800 hover:bg-[#EADBFF] transition-colors w-full text-left"
+                        >
+                          {item.label}
+                        </button>
+                      )
+                    }
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="block py-3 px-4 rounded-lg text-slate-800 hover:bg-[#EADBFF] transition-colors"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    )
+                  })}
                 </nav>
 
                 <div className="mt-6">
