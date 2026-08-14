@@ -6,6 +6,11 @@ export type MiniQuizQuestion = {
   explain?: string
 }
 
+export const isMathSubject = (str: string = '') => {
+  const val = str.toLowerCase()
+  return val.includes('গনিত') || val.includes('গণিত') || val.includes('math')
+}
+
 import banglaQuestions from '@/data/t20_aggregate/bangla.json'
 import englishQuestions from '@/data/t20_aggregate/english.json'
 import gkQuestions from '@/data/t20_aggregate/gk.json'
@@ -36,6 +41,25 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 export async function loadQuestionsForSubject(subject: string): Promise<MiniQuizQuestion[]> {
+  if (isMathSubject(subject)) {
+    const { liveMcqData } = await import('@/data/liveMcqData')
+    const mathTopics = liveMcqData.math?.topics
+    if (!mathTopics) return []
+    const allQuestions: MiniQuizQuestion[] = []
+    Object.values(mathTopics).forEach((questions) => {
+      questions.forEach((q, idx) => {
+        allQuestions.push({
+          id: `math-${idx}`,
+          question: q.question,
+          options: q.options,
+          answer: q.answer,
+          explain: typeof q.explain === 'string' ? q.explain : undefined,
+        })
+      })
+    })
+    return shuffleArray(allQuestions).slice(0, 20)
+  }
+
   const all = SUBJECT_DATA[subject]
   if (!all || !all.length) return []
   const shuffled = shuffleArray([...all])
@@ -43,6 +67,7 @@ export async function loadQuestionsForSubject(subject: string): Promise<MiniQuiz
 }
 
 export function getQuestionCountForSubject(subject: string): number {
+  if (isMathSubject(subject)) return 20
   const all = SUBJECT_DATA[subject]
   return all ? 20 : 0
 }

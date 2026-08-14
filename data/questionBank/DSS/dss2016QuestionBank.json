@@ -4,9 +4,10 @@
     "examType": "preliminary",
     "totalMarks": "70",
     "totalQuestions": 70,
-     "cutMark": 50,
+    "cutMark": 50,
     "negativeMarkPerWrong": 0,
-    "durationMinutes": 60
+    "durationMinutes": 60,
+    "examDate": "2016-05-20"
   },
   "questions": [
     {
@@ -16,7 +17,7 @@
       "q": "বাংলাদেশ ছাড়া কোন অঞ্চলের মানুষের ভাষা বাংলা?",
       "options": ["উড়িষ্যা", "তামিল", "নাগপুর", "মিজোরাম"],
       "ans": 0,
-      "explain": "ভারতের উড়িষ্যা ও পশ্চিমবঙ্গ অঞ্চলের মানুষের প্রধান ভাষা বাংলা। [৪]",
+      "explain": "ভারতের উড়িষ্যা ও পশ্চিমবঙ্গ অঞ্চলের মানুষের ভাষা বাংলা।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -26,7 +27,7 @@
       "q": "তারিখ শব্দটি কোন ভাষা থেকে বাংলায় এসেছে?",
       "options": ["ফরাসি", "আরবি", "তুর্কি", "পর্তুগিজ"],
       "ans": 1,
-      "explain": "তারিখ একটি আরবি শব্দ। [৪]",
+      "explain": "তারিখ আরবি শব্দ।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -36,7 +37,17 @@
       "q": "রিক্সা কোন ভাষার শব্দ?",
       "options": ["গুজরাটি", "পাঞ্জাবি", "তুর্কি", "জাপানি"],
       "ans": 3,
-      "explain": "রিক্সা জাপানি ভাষা থেকে আগত একটি শব্দ। [৪]",
+      "explain": "রিক্সা জাপানি শব্দ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 4,
+      "subject": "বাংলা",
+      "topics": "শব্দের উৎস",
+      "q": "প্রচলিত বিদেশী শব্দের ভাবানুবাদমূলক প্রতিশব্দকে কী বলে?",
+      "options": ["অপিনিহিত", "পারিভাষিক শব্দ", "রূঢ়ি শব্দ", "তৎসম শব্দ"],
+      "ans": 1,
+      "explain": "ভাবানুবাদমূলক প্রতিশব্দকে পারিভাষিক শব্দ বলে।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -46,7 +57,7 @@
       "q": "বাংলা ভাষায় যৌগিক স্বরধ্বনির সংখ্যাটি?",
       "options": ["১১টি", "২৫টি", "৪০টি", "৫০টি"],
       "ans": 1,
-      "explain": "বাংলা ভাষায় যৌগিক স্বরধ্বনির সংখ্যা ২৫টি। [৫]",
+      "explain": "বাংলায় যৌগিক স্বরধ্বনি ২৫টি।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -56,7 +67,17 @@
       "q": "ব্রহ্মপুত্র শব্দের 'হ্ম' যুক্ত বর্ণটি কোন বর্ণের সংযুক্ত রূপ?",
       "options": ["ম+হ", "হ+ম", "ক্+ষ", "হ+ণ"],
       "ans": 1,
-      "explain": "হ্ম যুক্তবর্ণটি হ এবং ম এর সংযুক্ত রূপ। [৫]",
+      "explain": "হ্ম = হ্ + ম।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 7,
+      "subject": "বাংলা",
+      "topics": "সন্ধি",
+      "q": "উপরিউক্ত সন্ধিবদ্ধ শব্দ কোনটি?",
+      "options": ["উপরিউক্ত", "উপর্যপরি", "উপর্যুক্ত", "উপরোক্ত"],
+      "ans": 2,
+      "explain": "উপরি + উক্ত = উপর্যুক্ত।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -66,17 +87,37 @@
       "q": "নিচের কোনটি রূপক কর্মধারয় সমাসের উদাহরণ?",
       "options": ["মনমরা", "মনগড়া", "মনমাঝি", "পরাণপ্রিয়"],
       "ans": 2,
-      "explain": "মন রূপ মাঝি = মনমাঝি। [৫]",
+      "explain": "মন রূপ মাঝি = মনমাঝি।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 9,
+      "subject": "বাংলা",
+      "topics": "কারক",
+      "q": "আছো তুমি জগৎ মাঝারে। এখানে ‘মাঝারে’ শব্দটি কোন অর্থে ব্যবহৃত?",
+      "options": ["বাইরে", "ব্যাপ্তি", "মধ্যে", "সঙ্গে"],
+      "ans": 1,
+      "explain": "মাঝারে এখানে ব্যাপ্তি অর্থে।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
       "id": 10,
       "subject": "বাংলা",
+      "topics": "এক কথায় প্রকাশ",
+      "q": "বিশ্বজনের হিতকর এক কথায় কি বলে?",
+      "options": ["হিতকর", "বিশ্বজনহিত", "বিশ্বজনীন", "বিশ্বজনক"],
+      "ans": 2,
+      "explain": "বিশ্বজনের হিতকর = বিশ্বজনীন।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 11,
+      "subject": "বাংলা",
       "topics": "বাগধারা",
       "q": "তামার বিষ বাগধারাটির অর্থ কী?",
       "options": ["ক্ষণস্থায়ী বস্তু", "অর্থের কুপ্রভাব", "তীব্র জ্বালা", "বিপজ্জনক"],
       "ans": 1,
-      "explain": "তামার বিষ বাগধারাটির অর্থ হলো অর্থের কুপ্রভাব। [৬]",
+      "explain": "তামার বিষ = অর্থের কুপ্রভাব।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -86,7 +127,27 @@
       "q": "একটি অপূর্ণ বাক্যের শেষে অন্য বাক্যের অবতারণা করতে কী চিহ্ন বসে?",
       "options": ["ড্যাশ", "কোলন", "সেমিকোলন", "পূর্ণচ্ছেদ"],
       "ans": 1,
-      "explain": "অপূর্ণ বাক্যের পর নতুন বাক্যের অবতারণা করতে কোলন (:) বসে। [৬]",
+      "explain": "অপূর্ণ বাক্যের পর নতুন বাক্যের অবতারণায় কোলন (:) বসে।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 13,
+      "subject": "বাংলা",
+      "topics": "সাহিত্য",
+      "q": "অন্ধবধূ কবিতায় কোন পাখির চেঁচিয়ে সারা হওয়ার কথা উল্লেখ রয়েছে?",
+      "options": ["কাক", "চোখ গেল", "কোকিল", "শালিক"],
+      "ans": 1,
+      "explain": "চোখ গেল পাখির ডাক।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 14,
+      "subject": "বাংলা",
+      "topics": "সাহিত্য",
+      "q": "বন্যেরা বনে সুন্দর, শিশুরা মাতৃক্রোড়ে এটি কী?",
+      "options": ["প্রবাদ", "ডাকের বচন", "খনার বচন", "ছড়াংশ"],
+      "ans": 0,
+      "explain": "এটি একটি প্রবাদ বাক্য।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -96,17 +157,77 @@
       "q": "কাজী নজরুল ইসলামের প্রথম কাব্যগ্রন্থের নাম কী?",
       "options": ["অগ্নিবীণা", "বিষের বাঁশি", "ছায়ানট", "চক্রবাক"],
       "ans": 0,
-      "explain": "অগ্নিবীণা নজরুল ইসলামের প্রথম কাব্যগ্রন্থ, যা ১৯২২ সালে প্রকাশিত হয়। [৭]",
+      "explain": "অগ্নিবীণা ১৯২২ সালে প্রকাশিত প্রথম কাব্যগ্রন্থ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 16,
+      "subject": "বাংলা",
+      "topics": "সাহিত্য",
+      "q": "প্রবাসের দিনগুলি কার রচিত?",
+      "options": ["সৈয়দ মুজতবা আলী", "সৈয়দ শামসুল হক", "বুদ্ধদেব বসু", "হুমায়ূন আহমেদ"],
+      "ans": 0,
+      "explain": "প্রবাসের দিনগুলি সৈয়দ মুজতবা আলীর রচনা।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 17,
+      "subject": "বাংলা",
+      "topics": "সাহিত্য",
+      "q": "ভানু সিংহ কার ছদ্মনাম?",
+      "options": ["রবীন্দ্রনাথ ঠাকুর", "কাজী নজরুল", "প্রমথ চৌধুরী", "শরৎচন্দ্র"],
+      "ans": 0,
+      "explain": "ভানুসিংহ রবীন্দ্রনাথের ছদ্মনাম।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 18,
+      "subject": "বাংলা",
+      "topics": "সাহিত্য",
+      "q": "অন্নদামঙ্গল কাব্য কোন যুগের রচনা?",
+      "options": ["প্রাচীন যুগ", "মধ্যযুগ", "আধুনিক যুগ", "বর্তমান যুগ"],
+      "ans": 1,
+      "explain": "অন্নদামঙ্গল মধ্যযুগের মঙ্গলকাব্য।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 19,
+      "subject": "বাংলা",
+      "topics": "সাহিত্য",
+      "q": "অমিত্রাক্ষর ছন্দের প্রবর্তক কে?",
+      "options": ["মাইকেল মধুসূদন দত্ত", "রবীন্দ্রনাথ", "কায়কোবাদ", "জীবনানন্দ"],
+      "ans": 0,
+      "explain": "অমিত্রাক্ষর ছন্দের প্রবর্তক মাইকেল মধুসূদন দত্ত।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
       "id": 20,
       "subject": "বাংলা",
-      "topics": "ব্যাকরণ",
+      "topics": "সন্ধি",
       "q": "যদ্যপি এর সন্ধিবিচ্ছেদ কী?",
       "options": ["যদি + পি", "যদি + অপি", "যদি + আপি", "যদ্যা + অপি"],
       "ans": 1,
-      "explain": "যদি + অপি = যদ্যপি। [৮]",
+      "explain": "যদি + অপি = যদ্যপি।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 21,
+      "subject": "English",
+      "topics": "Spelling",
+      "q": "Which spelling is correct?",
+      "options": ["Comission", "Commission", "Commision", "Comision"],
+      "ans": 1,
+      "explain": "Correct spelling Commission.",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 22,
+      "subject": "English",
+      "topics": "Adjective",
+      "q": "People শব্দটির Adjective কোনটি?",
+      "options": ["Popular", "Populous", "Peopleous", "Peoply"],
+      "ans": 1,
+      "explain": "People এর Adjective Populous.",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -115,8 +236,18 @@
       "topics": "Prepositions",
       "q": "He is innocent ___ the charge.",
       "options": ["of", "with", "to", "on"],
+      "ans": 0,
+      "explain": "Innocent of = কোনো অভিযোগ থেকে নির্দোষ। সঠিক উত্তর of।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 24,
+      "subject": "English",
+      "topics": "Noun",
+      "q": "Deny শব্দটির Noun কোনটি?",
+      "options": ["Denyess", "Denial", "Deniable", "Denied"],
       "ans": 1,
-      "explain": "উৎস অনুযায়ী এখানে with সঠিক উত্তর হিসেবে দেওয়া হয়েছে। [৯]",
+      "explain": "Deny এর Noun Denial.",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -126,17 +257,157 @@
       "q": "He has no control ___ himself.",
       "options": ["on", "at", "in", "over"],
       "ans": 3,
-      "explain": "Control over মানে কারো বা কোনো কিছুর ওপর নিয়ন্ত্রণ থাকা। [৯]",
+      "explain": "Control over মানে নিয়ন্ত্রণ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 26,
+      "subject": "English",
+      "topics": "Preposition",
+      "q": "He is good ___ English.",
+      "options": ["at", "in", "on", "for"],
+      "ans": 0,
+      "explain": "Good at = দক্ষ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 27,
+      "subject": "English",
+      "topics": "Noun",
+      "q": "কোনটি Material Noun নয়?",
+      "options": ["Wood", "Paper", "Ring", "Water"],
+      "ans": 2,
+      "explain": "Ring হলো Common Noun, বাকিগুলো Material Noun। প্রশ্নপত্রে উত্তর হিসেবে Paper দেওয়া আছে।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 28,
+      "subject": "English",
+      "topics": "Literature",
+      "q": "আধুনিক ইংরেজি সাহিত্যের জনক কে?",
+      "options": ["Shakespeare", "Chaucer", "Milton", "Wordsworth"],
+      "ans": 1,
+      "explain": "Geoffrey Chaucer কে Father of Modern English Literature বলা হয়।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 29,
+      "subject": "English",
+      "topics": "Spelling",
+      "q": "কোনটি শুদ্ধ বানান?",
+      "options": ["Posession", "Possesion", "Possession", "Posesion"],
+      "ans": 2,
+      "explain": "Possession শুদ্ধ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 30,
+      "subject": "English",
+      "topics": "Parts of Speech",
+      "q": "কোনটি Verb?",
+      "options": ["Beauty", "Feed", "Beautiful", "Food"],
+      "ans": 1,
+      "explain": "Feed হলো Verb।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 31,
+      "subject": "English",
+      "topics": "Sentence",
+      "q": "May Allah help you - what kind of sentence?",
+      "options": ["Assertive", "Optative", "Imperative", "Exclamatory"],
+      "ans": 1,
+      "explain": "প্রার্থনামূলক বাক্য Optative।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 32,
+      "subject": "English",
+      "topics": "Antonym",
+      "q": "Gentle এর বিপরীত কোনটি?",
+      "options": ["Polite", "Rude", "Kind", "Soft"],
+      "ans": 1,
+      "explain": "Gentle এর বিপরীত Rude।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 33,
+      "subject": "English",
+      "topics": "Parts of Speech",
+      "q": "Homely কোন Parts of speech?",
+      "options": ["Noun", "Verb", "Adjective", "Adverb"],
+      "ans": 2,
+      "explain": "Homely Adjective।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
       "id": 34,
       "subject": "English",
-      "topics": "Grammar",
+      "topics": "Number",
       "q": "Thief এর plural কোনটি?",
       "options": ["Thiefes", "Thieves", "Thiefs", "Thives"],
       "ans": 1,
-      "explain": "Thief শব্দের শেষে 'f' থাকায় plural করার সময় 'ves' যুক্ত হয়। [১১]",
+      "explain": "f থাকলে ves হয় - Thieves।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 35,
+      "subject": "English",
+      "topics": "Prepositions",
+      "q": "Students are concerned ___ their result.",
+      "options": ["with", "of", "about", "for"],
+      "ans": 0,
+      "explain": "Concerned with = উদ্বিগ্ন।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 36,
+      "subject": "English",
+      "topics": "Vocabulary",
+      "q": "Climate হলো?",
+      "options": ["আবহাওয়া", "জলবায়ু", "পরিবেশ", "প্রকৃতি"],
+      "ans": 1,
+      "explain": "Climate = জলবায়ু, Weather = আবহাওয়া।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 37,
+      "subject": "English",
+      "topics": "Gender",
+      "q": "কোনটি স্ত্রীবাচক শব্দ?",
+      "options": ["King", "Queen", "Man", "Boy"],
+      "ans": 1,
+      "explain": "Queen স্ত্রীবাচক।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 38,
+      "subject": "English",
+      "topics": "Parts of Speech",
+      "q": "Beautiful শব্দটি কোন Parts of speech?",
+      "options": ["Noun", "Adjective", "Verb", "Adverb"],
+      "ans": 1,
+      "explain": "Beautiful Adjective।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 39,
+      "subject": "English",
+      "topics": "Grammar",
+      "q": "Parts of speech কত প্রকার?",
+      "options": ["৬ প্রকার", "৭ প্রকার", "৮ প্রকার", "৯ প্রকার"],
+      "ans": 2,
+      "explain": "Parts of speech ৮ প্রকার।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 40,
+      "subject": "English",
+      "topics": "Adjective",
+      "q": "Truth শব্দটির Adjective হবে?",
+      "options": ["True", "Truthful", "Truly", "None of them"],
+      "ans": 3,
+      "explain": "প্রশ্নপত্র অনুযায়ী উত্তর None of them দেওয়া আছে, যদিও True/Truthful উভয়ই Adjective।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -146,7 +417,87 @@
       "q": "বঙ্গভঙ্গ রদ হয় কোন সালে?",
       "options": ["১৯০৫", "১৯১৬", "১৯২৩", "১৯১১"],
       "ans": 3,
-      "explain": "১৯১১ সালে সম্রাট পঞ্চম জর্জের দিল্লি দরবারে বঙ্গভঙ্গ রদ ঘোষণা করা হয়। [১২]",
+      "explain": "১৯১১ সালে দিল্লি দরবারে বঙ্গভঙ্গ রদ ঘোষণা হয়।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 42,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "বঙ্গবন্ধুর জন্মদিন কত তারিখ?",
+      "options": ["১৭ মার্চ", "২৬ মার্চ", "১৫ আগস্ট", "৭ মার্চ"],
+      "ans": 0,
+      "explain": "১৭ মার্চ ১৯২০।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 43,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "স্বাধীনতা যুদ্ধে মহিলা বীর প্রতীক কত জন?",
+      "options": ["১ জন", "২ জন", "৩ জন", "৪ জন"],
+      "ans": 1,
+      "explain": "২ জন - তারামন বিবি ও সেতারা বেগম।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 44,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "বাংলাদেশের সর্বদক্ষিণের দ্বীপ কোনটি?",
+      "options": ["সেন্টমার্টিন", "ভোলা", "সন্দ্বীপ", "হাতিয়া"],
+      "ans": 0,
+      "explain": "সর্বদক্ষিণে সেন্টমার্টিন।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 45,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "বাংলাদেশের সর্বোচ্চ শৃঙ্গের নাম কী?",
+      "options": ["তাজিনডং", "কেওক্রাডং", "সাকা হাফং", "চিম্বুক"],
+      "ans": 0,
+      "explain": "তৎকালীন প্রশ্নে তাজিনডং, বর্তমানে সাকা হাফং সর্বোচ্চ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 46,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "বাংলাদেশে বেশি রেশম হয় কোন স্থানে?",
+      "options": ["রাজশাহী", "রংপুর", "ঢাকা", "কুমিল্লা"],
+      "ans": 0,
+      "explain": "রাজশাহী রেশমের জন্য বিখ্যাত।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 47,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "বাংলাদেশের পার্লামেন্টের প্রতীক কী?",
+      "options": ["শাপলা", "দোয়েল", "নৌকা", "বাঘ"],
+      "ans": 0,
+      "explain": "জাতীয় সংসদের প্রতীক শাপলা।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 48,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "আন্তর্জাতিক",
+      "q": "হাইতির রাজধানী কী?",
+      "options": ["পোর্ট অব প্রিন্স", "হাভানা", "লিমা", "কিটো"],
+      "ans": 0,
+      "explain": "হাইতির রাজধানী পোর্ট অব প্রিন্স।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 49,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "আন্তর্জাতিক",
+      "q": "সুইডেনের মুদ্রার নাম কী?",
+      "options": ["ইউরো", "ক্রোনা", "ডলার", "পাউন্ড"],
+      "ans": 1,
+      "explain": "সুইডেনের মুদ্রা ক্রোনা।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -156,7 +507,57 @@
       "q": "পৃথিবীর দীর্ঘতম নদী কোনটি?",
       "options": ["আমাজন", "ভলগা", "নীলনদ", "দানিয়ুব"],
       "ans": 2,
-      "explain": "নীলনদ পৃথিবীর দীর্ঘতম নদী, যা আফ্রিকা মহাদেশে অবস্থিত। [১৪]",
+      "explain": "নীলনদ দীর্ঘতম (৬৬৫০ কিমি)।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 51,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "আন্তর্জাতিক",
+      "q": "প্রথম বিশ্বযুদ্ধ শুরু হয় কত সালে?",
+      "options": ["১৯১২", "১৯১৪", "১৯১৬", "১৯১৮"],
+      "ans": 1,
+      "explain": "১৯১৪ সালে প্রথম বিশ্বযুদ্ধ শুরু।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 52,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "খেলাধুলা",
+      "q": "টি-২০ বিশ্বকাপ ২০১৬ এর চ্যাম্পিয়ন দেশ কোনটি?",
+      "options": ["ভারত", "ইংল্যান্ড", "ওয়েস্ট ইন্ডিজ", "শ্রীলঙ্কা"],
+      "ans": 2,
+      "explain": "২০১৬ টি-২০ বিশ্বকাপ চ্যাম্পিয়ন ওয়েস্ট ইন্ডিজ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 53,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "আন্তর্জাতিক",
+      "q": "আন্তর্জাতিক প্রতিবন্ধী দিবস কোনটি?",
+      "options": ["৩ ডিসেম্বর", "৫ ডিসেম্বর", "১০ ডিসেম্বর", "১ ডিসেম্বর"],
+      "ans": 0,
+      "explain": "৩ ডিসেম্বর আন্তর্জাতিক প্রতিবন্ধী দিবস।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 54,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "আন্তর্জাতিক",
+      "q": "জাতিসংঘের বর্তমান মহাসচিবের নাম কি? (২০১৬ অনুযায়ী প্রশ্ন)",
+      "options": ["বান কি মুন", "অ্যান্টোনিও গুতেরেস", "কফি আনান", "বুট্রোস ঘালি"],
+      "ans": 1,
+      "explain": "প্রশ্নপত্রে গুতেরেস উত্তর দেওয়া, যদিও ২০১৬ তে বান কি মুন ছিলেন, ২০১৭ থেকে গুতেরেস।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 55,
+      "subject": "সাধারণ জ্ঞান",
+      "topics": "বাংলাদেশ",
+      "q": "শহীদ বুদ্ধিজীবী দিবস কোনটি?",
+      "options": ["১৪ ডিসেম্বর", "১৬ ডিসেম্বর", "২১ ফেব্রুয়ারি", "২৬ মার্চ"],
+      "ans": 0,
+      "explain": "১৪ ডিসেম্বর শহীদ বুদ্ধিজীবী দিবস।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -166,17 +567,97 @@
       "q": "বার্ষিক ৫% হারে ৭৫০ টাকার ৪ বছরের মুনাফা কত?",
       "options": ["২০০ টাকা", "১৫০ টাকা", "২৫০ টাকা", "৩০০ টাকা"],
       "ans": 1,
-      "explain": "মুনাফা = (৭৫০ * ৪ * ৫) / ১০০ = ১৫০ টাকা। [১৫, ১৬]",
+      "explain": "I = PRN/100 = 750*5*4/100 = 150",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 57,
+      "subject": "গনিত",
+      "topics": "পাটিগণিত",
+      "q": "করিম ও রহিমের বেতনের অনুপাত ৭ঃ৫। করিমের বেতন রহিমের বেতন অপেক্ষা ৪০০ টাকা বেশি। রহিমের বেতন কত?",
+      "options": ["১০০০ টাকা", "১৪০০ টাকা", "২০০০ টাকা", "১৮০০ টাকা"],
+      "ans": 0,
+      "explain": "৭-৫=২ অনুপাত =৪০০ টাকা, ১=২০০, রহিম ৫*২০০=১০০০",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 58,
+      "subject": "গনিত",
+      "topics": "পাটিগণিত",
+      "q": "৪০-১০০ পর্যন্ত বৃহত্তম ও ক্ষুদ্রতম মৌলিক সংখ্যার অন্তর কত?",
+      "options": ["৫৫", "৫৬", "৫৭", "৫৮"],
+      "ans": 1,
+      "explain": "৪০-১০০ এ ক্ষুদ্রতম মৌলিক ৪১, বৃহত্তম ৯৭, অন্তর ৫৬",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 59,
+      "subject": "গনিত",
+      "topics": "পাটিগণিত",
+      "q": "শতকরা বার্ষিক কত হার সুদে ১ বছরের সুদ আসলের ১/৫ অংশ হবে?",
+      "options": ["১৫%", "২০%", "২৫%", "৩০%"],
+      "ans": 1,
+      "explain": "১/৫ = ২০%, তাই হার ২০%",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 60,
+      "subject": "গনিত",
+      "topics": "পাটিগণিত",
+      "q": "কোন সংখ্যার ১/২ অংশের সাথে ৬ যোগ করলে সংখ্যাটির ২/৩ অংশ হবে। সংখ্যাটি কত?",
+      "options": ["৩০", "৩৬", "৪০", "৪৮"],
+      "ans": 1,
+      "explain": "x/2+6=2x/3 => x=36",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 61,
+      "subject": "গনিত",
+      "topics": "বীজগণিত",
+      "q": "x-2y=8, 3x-2y=4 সমীকরণ জোটে x এর মান কত?",
+      "options": ["-১", "-২", "-৩", "-৪"],
+      "ans": 1,
+      "explain": "বিয়োগ করে -2x=4 => x=-2",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
       "id": 62,
       "subject": "গনিত",
       "topics": "পাটিগণিত",
-      "q": "১ + ২ + ৩ + ৪৪ + … + ৯৯ = কত?",
+      "q": "১ + ২ + ৩ + ৪ + … + ৯৯ = কত?",
       "options": ["৪৬৫০", "৪৭৫০", "৪৮৫০", "৪৯৫০"],
       "ans": 3,
-      "explain": "সূত্র: n(n+1)/2 = (৯৯ * ১০০) / ২ = ৪৯৫০। [১৭]",
+      "explain": "n(n+1)/2 = 99*100/2=4950",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 63,
+      "subject": "গনিত",
+      "topics": "বীজগণিত",
+      "q": "x-4 = x-4/x সমীকরণের সমাধান কোনটি?",
+      "options": ["১", "৪", "অসীম", "কোনোটিই নয়"],
+      "ans": 3,
+      "explain": "সমাধানে x এর মান অসংজ্ঞায়িত বা মেলে না, তাই কোনোটিই নয়।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 64,
+      "subject": "গনিত",
+      "topics": "বীজগণিত",
+      "q": "একটি সংখ্যা x, তার সাথে ২ যোগ করে দ্বিগুণ করলে কত হবে?",
+      "options": ["x+2", "2x+2", "2(x+2)", "x(x+2)"],
+      "ans": 2,
+      "explain": "প্রশ্নপত্রে বড় সংখ্যাটি 2(x+2) হিসেবে উত্তর দেওয়া আছে।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 65,
+      "subject": "গনিত",
+      "topics": "জ্যামিতি",
+      "q": "১ একক বাহুবিশিষ্ট সমবাহু ত্রিভুজের পরিসীমা কত?",
+      "options": ["২", "৩", "৪", "৬"],
+      "ans": 1,
+      "explain": "পরিসীমা = ৩*বাহু = ৩",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -186,7 +667,27 @@
       "q": "যে কোণের ডিগ্রীর পরিমাপ ৯০ তাকে কী বলে?",
       "options": ["সমকোণ", "স্থুলকোণ", "সরলকোণ", "সূক্ষ্মকোণ"],
       "ans": 0,
-      "explain": "৯০ ডিগ্রি কোণকে সমকোণ বলা হয়। [১৮]",
+      "explain": "৯০ ডিগ্রি = সমকোণ।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 67,
+      "subject": "গনিত",
+      "topics": "জ্যামিতি",
+      "q": "যে ত্রিভুজের তিন কোণ সমান তাকে কোন ধরনের ত্রিভুজ বলে?",
+      "options": ["সমবাহু", "সমদ্বিবাহু", "বিষমবাহু", "সমকোণী"],
+      "ans": 0,
+      "explain": "তিন কোণ সমান = সমবাহু ত্রিভুজ (প্রশ্নপত্রে সমকোণ লেখা থাকলেও সঠিক সমবাহু)।",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 68,
+      "subject": "গনিত",
+      "topics": "পাটিগণিত",
+      "q": "x:y=5:6 হলে 3x:5y= কত?",
+      "options": ["1:2", "2:3", "3:4", "5:6"],
+      "ans": 0,
+      "explain": "3*5 : 5*6 =15:30=1:2",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     },
     {
@@ -196,7 +697,17 @@
       "q": "একটি সংখ্যা ৭৪২ হতে যত বড় ৮৩০ হতে তত ছোট, সংখ্যাটি কত?",
       "options": ["৭৮০", "৭৮২", "৭৯০", "৭৮৬"],
       "ans": 3,
-      "explain": "সংখ্যাটি = (৭৪২ + ৮৩০) / ২ = ৭৮৬। [১৮]",
+      "explain": "(৭৪২+৮৩০)/২ = ৭৮৬",
+      "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
+    },
+    {
+      "id": 70,
+      "subject": "গনিত",
+      "topics": "পাটিগণিত",
+      "q": "নিচের কোনটি মৌলিক সংখ্যা?",
+      "options": ["৪৭", "৪৯", "৫১", "৫৪"],
+      "ans": 0,
+      "explain": "৪৭ মৌলিক সংখ্যা।",
       "source": ["Union_Samajkormi_Exam_2016SparkEdu.pdf"]
     }
   ]
