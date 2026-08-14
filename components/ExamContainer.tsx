@@ -294,7 +294,13 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
             {/* New Promotional & WhatsApp Div */}
             <div className="border-t border-[#EADBFF] bg-[#FAF8FF] px-5 py-4 text-center sm:px-6">
               <p className="text-xs font-medium leading-relaxed text-slate-700 sm:text-sm">
-                আপনার স্বপ্নের সরকারি চাকরি নিশ্চিত করতে জাকির স্যার এর বিকল্প নেই। এখনই ইনবক্স করে ৫০% ছাড়ে ভর্তি হয়ে যান!
+                স্বপ্নটা কি সরকারি চাকরি?<br />
+                সমাধান - জাকির স্যারের গাইডলাইন<br />
+                ✅ ১০০% সিলেবাস কভার <br />
+                ✅ বিগত বছরের প্রশ্ন এনালাইসিস<br />
+                ✅ পরীক্ষার আগ পর্যন্ত সাপোর্ট<br />
+                🎉 স্পেশাল অফার: ৫০% ছাড়!<br />
+                সিট লিমিটেড। দেরি না করে এখনই ইনবক্স করুন।
               </p>
               
               <a
