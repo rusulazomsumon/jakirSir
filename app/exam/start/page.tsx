@@ -1,13 +1,13 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { ExamData } from '@/types/exam'
 import { loadModelTestData } from '@/utils/jsonLoader'
 import { loadTopicExamData } from '@/app/actions/topicLoader'
 import ExamContainer from '@/components/ExamContainer'
 
-export default function ExamStartPage() {
+function ExamStartContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const subject = searchParams.get('subject') || 'bangla'
@@ -70,7 +70,7 @@ export default function ExamStartPage() {
     return (
       <div className="min-h-screen bg-slate-50 flex items-center justify-center">
         <div className="text-center">
-          <p className="text-sm text-red-600">{error || 'ডেটা পাওয়া যায়নি।'}</p>
+          <p className="text-sm text-red-600">{error || 'ডেটা পাওয়া যায়নি।'}</p>
           <button
             type="button"
             onClick={() => {
@@ -87,4 +87,21 @@ export default function ExamStartPage() {
   }
 
   return <ExamContainer examData={examData} />
+}
+
+export default function ExamStartPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+          <div className="text-center">
+            <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-blue-600 border-r-transparent"></div>
+            <p className="mt-4 text-sm text-slate-500">পরীক্ষার ডেটা লোড হচ্ছে...</p>
+          </div>
+        </div>
+      }
+    >
+      <ExamStartContent />
+    </Suspense>
+  )
 }
