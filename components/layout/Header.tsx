@@ -95,7 +95,7 @@ export default function Header() {
           </button>
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-10 w-10">
-              <Image src="/images/jakirSirSmartEdulogo.png" alt="Jakir Sir Edu Logo" fill style={{ objectFit: 'contain' }} />
+              <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir Edu Logo" fill style={{ objectFit: 'contain' }} />
             </div>
             <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
           </Link>
@@ -136,7 +136,7 @@ export default function Header() {
               <div className="flex items-center justify-between p-4 border-b border-border">
                 <div className="flex items-center gap-2">
                   <div className="relative h-8 w-8">
-                    <Image src="/images/jakirSirSmartEdu.logo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
+                    <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
                   </div>
                   <span className="font-semibold text-slate-800 text-sm">Jakir Sir SMART Edu</span>
                 </div>
