@@ -84,7 +84,14 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Swapped order: Logo first, then Menu icon button */}
         <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-10 w-10">
+              <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir Edu Logo" fill style={{ objectFit: 'contain' }} />
+            </div>
+            <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
+          </Link>
           <button
             type="button"
             aria-label="Menu"
@@ -93,12 +100,6 @@ export default function Header() {
           >
             <MenuIcon />
           </button>
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative h-10 w-10">
-              <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir Edu Logo" fill style={{ objectFit: 'contain' }} />
-            </div>
-            <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
-          </Link>
         </div>
 
         <div className="flex items-center gap-3">

@@ -291,10 +291,34 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
               </p>
               <p className="mt-1 text-xs text-slate-500">Top {simulatedRank.percentile.toFixed(1)}%</p>
             </div>
+            {/* New Promotional & WhatsApp Div */}
+            <div className="border-t border-[#EADBFF] bg-[#FAF8FF] px-5 py-4 text-center sm:px-6">
+              <p className="text-xs font-medium leading-relaxed text-slate-700 sm:text-sm">
+                আপনার স্বপ্নের সরকারি চাকরি নিশ্চিত করতে জাকির স্যার এর বিকল্প নেই। এখনই ইনবক্স করে ৫০% ছাড়ে ভর্তি হয়ে যান!
+              </p>
+              
+              <a
+                href="https://wa.me/8801521496532"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#20bd5a] hover:shadow-md sm:text-sm"
+              >
+                {/* WhatsApp Icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-4 w-4 sm:h-5 sm:w-5"
+                >
+                  <path d="M12 2.25c-5.384 0-9.75 4.365-9.75 9.75 0 1.741.466 3.447 1.353 4.958L2.25 22.5l5.147-1.353A9.706 9.706 0 0012 21.75c5.384 0 9.75-4.365 9.75-9.75S17.384 2.25 12 2.25z" />
+                </svg>
+                <span>WhatsApp: ০১৫২১-৪৯৬৫৩২</span>
+              </a>
+            </div>
           </div>
 
           <div className="mt-6 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm sm:p-8">
-            <h3 className="text-lg font-semibold text-slate-900">Answer Key</h3>
+            <h3 className="text-lg font-semibold text-slate-900">ব্যাখ্যাসহ সঠিক উত্তর</h3>
             <div className="mt-4 space-y-2">
               {questions.map((question, idx) => {
                 const userAnswer = userAnswers[question.id]
@@ -343,6 +367,13 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
             className="w-full rounded-2xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-[#1D4ED8]"
           >
             হোমে ফিরে যান
+          </button>
+          <button
+            type="button"
+            onClick={() => router.push('/topic-wise-exam')}
+            className="w-full rounded-2xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-[#1D4ED8]"
+          >
+            আবার পরীক্ষা দিন
           </button>
         </section>
       )}
