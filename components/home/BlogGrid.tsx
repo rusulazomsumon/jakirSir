@@ -25,35 +25,35 @@ const posts: Post[] = [
     title: 'ইউনিয়ন সমাজকর্মী নিয়োগ পরীক্ষার প্রস্তুতি: সিলেবাস ও গাইডলাইন',
     category: 'somajkormi',
     readTime: '৩ মিনিট পড়া • ১২ আগস্ট',
-    link: '/blog/somajseba-preparation'
+    link: '/'
   },
   {
     id: 'bank-start',
     title: 'ব্যাংক জব প্রস্তুতি যেভাবে শুরু করবেন: এক্সপার্ট গাইডলাইন',
     category: 'bank',
     readTime: '৪ মিনিট পড়া • ১০ আগস্ট',
-    link: '/blog/bank-job-start-guide'
+    link: '/'
   },
   {
     id: 'bank-full',
     title: 'ব্যাংক জব প্রস্তুতি — প্রিলি, লিখিত ও ভাইভার পূর্ণাঙ্গ গাইড',
     category: 'bank',
     readTime: '৫ মিনিট পড়া • ০৮ আগস্ট',
-    link: '/blog/bank-job-full-guide'
+    link: '/'
   },
   {
     id: 'ntrca-guide',
     title: 'প্রাইমারি ও শিক্ষক নিবন্ধন (NTRCA) সেরা প্রস্তুতি কৌশল',
     category: 'ntrca',
     readTime: '৪ মিনিট পড়া • ০৫ আগস্ট',
-    link: '/blog/primary-ntrca-guide'
+    link: '/'
   },
   {
     id: 'circular',
     title: 'All Jobs Circular | চলমান সকল সরকারি ও বেসরকারি নিয়োগ বিজ্ঞপ্তি',
     category: 'circular',
     readTime: '২ মিনিট পড়া • আজকের আপডেট',
-    link: '/blog/all-job-circulars'
+    link: '/'
   }
 ]
 

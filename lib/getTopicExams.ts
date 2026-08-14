@@ -61,7 +61,8 @@ export function getTopicExams(): TopicExamMeta[] {
     for (const file of files) {
       const filePath = path.join(folderPath, file)
       const fileContent = fs.readFileSync(filePath, 'utf-8')
-      const data = JSON.parse(fileContent) as { examInfo: Record<string, unknown> }
+      const parsed = JSON.parse(fileContent)
+      const data = Array.isArray(parsed) ? parsed[0] : parsed
 
       const examInfoRaw = data.examInfo || {}
 
@@ -126,10 +127,8 @@ export function getTopicExamBySlug(slug: string): TopicExamWithQuestions | null 
     const file = files[0]
     const filePath = path.join(folderPath, file)
     const fileContent = fs.readFileSync(filePath, 'utf-8')
-    const data = JSON.parse(fileContent) as {
-      examInfo: Record<string, unknown>
-      questions: unknown[]
-    }
+    const parsed = JSON.parse(fileContent)
+    const data = Array.isArray(parsed) ? parsed[0] : parsed
 
     const examInfoRaw = data.examInfo || {}
 
@@ -157,7 +156,7 @@ export function getTopicExamBySlug(slug: string): TopicExamWithQuestions | null 
           : undefined,
     }
 
-    const questions = (data.questions || []).map((q) => ({
+    const questions = (data.questions || []).map((q: Record<string, unknown>) => ({
       id: Number((q as Record<string, unknown>).id ?? 0),
       subject: String((q as Record<string, unknown>).subject ?? ''),
       topics: String((q as Record<string, unknown>).topics ?? ''),

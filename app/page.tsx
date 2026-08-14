@@ -4,6 +4,7 @@ import BottomNav from '@/components/layout/BottomNav'
 import Hero from '@/components/home/Hero'
 import RunningCourses from '@/components/home/RunningCourses'
 import QuickTools from '@/components/home/QuickTools'
+import TopicExamSection from '@/components/home/TopicExamSection'
 import LearningHub from '@/components/home/LearningHub'
 import PopularCourses from '@/components/home/PopularCourses'
 import InstantMCQ from '@/components/home/InstantMCQ'
@@ -21,6 +22,7 @@ export default function HomePage() {
       <main className="pb-[92px]">
         <Hero />
         <QuickTools />
+        <TopicExamSection />
         <RunningCourses />
         <LearningHub />
         <PopularCourses />
