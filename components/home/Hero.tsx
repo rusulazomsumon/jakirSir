@@ -1,35 +1,68 @@
 "use client"
 
+import Link from 'next/link'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import Image from 'next/image'
+import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const slides = [
-  { id: 1, title: 'আজই প্রস্তুতি শুরু করুন', img: '/images/SomajSebhaBanner.jpg' },
-  { id: 2, title: 'লাইভ ক্লাস ও recorded ভিডিও', img: '/images/BannerSomajShebaCourse.jpeg' }
+  { id: 1, img: '/images/SomajSebhaBanner.jpg', href: '/courses' },
+  { id: 2, img: '/images/BannerSomajShebaCourse.jpeg', href: '/courses' }
+]
+
+const quickActions = [
+  { label: 'লাইভ MCQ', href: '/live-mcq', live: true },
+  { label: 'সকল কোর্স', href: '/courses' },
+  { label: 'মডেল টেস্ট', href: '/model-test' },
+  { label: 'এক্সাম রুটিন', href: '/routine' }
 ]
 
 export default function Hero() {
+  const { openModal } = useSubjectSelection()
+
   return (
     <section className="pt-4">
       <div className="overflow-hidden rounded-[24px] shadow-floating">
-        <Swiper modules={[Autoplay]} slidesPerView={1} loop autoplay={{ delay: 4000 }} className="min-h-[280px]">
+        <Swiper modules={[Autoplay]} slidesPerView={1} loop autoplay={{ delay: 4000 }} className="h-auto">
           {slides.map((s) => (
             <SwiperSlide key={s.id}>
-              <div className="relative h-[30vh] sm:h-[42vh]">
-                <Image src={s.img} alt={s.title} fill style={{ objectFit: 'cover' }} priority />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <h2 className="text-2xl font-bold sm:text-3xl">{s.title}</h2>
-                  <p className="mt-2 text-sm sm:text-base">Live Class • Recorded Video • MCQ • PDF</p>
-                  <button className="mt-4 inline-flex h-[52px] items-center justify-center rounded-[16px] bg-accent px-5 text-sm font-bold text-textPrimary shadow-card">এখনই ভর্তি হন</button>
+              <Link href={s.href} className="block">
+                <div className="relative w-full aspect-[2/1]">
+                  <Image src={s.img} alt="Banner" fill sizes="100vw" className="object-cover rounded-2xl" priority />
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <div className="mt-2 p-3 sm:p-4">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:flex md:flex-row md:justify-between md:items-center">
+            {quickActions.map((item) => (
+              item.href === '/live-mcq' ? (
+                <button
+                  key={item.label}
+                  onClick={openModal}
+                  className="inline-flex items-center justify-center gap-2 bg-[#F5F2FE] hover:bg-[#7C3AED] hover:text-white text-[#7C3AED] font-medium py-2 px-3 rounded-xl border border-[#EADBFF] transition-all text-xs sm:text-sm"
+                >
+                  {item.live && <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span></span>}
+                  {item.label}
+                </button>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="inline-flex items-center justify-center gap-2 bg-[#F5F2FE] hover:bg-[#7C3AED] hover:text-white text-[#7C3AED] font-medium py-2 px-3 rounded-xl border border-[#EADBFF] transition-all text-xs sm:text-sm"
+                >
+                  {item.live && <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span></span>}
+                  {item.label}
+                </Link>
+              )
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )

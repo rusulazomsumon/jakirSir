@@ -2,6 +2,7 @@ export interface MCQ {
   question: string;
   options: string[];
   answer: number;
+  explain?: string;
 }
 
 export interface Subject {

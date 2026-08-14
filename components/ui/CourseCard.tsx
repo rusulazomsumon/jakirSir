@@ -1,11 +1,10 @@
 'use client'
 
-import Image from 'next/image'
 import React from 'react'
 import Button from './Button'
 
 export type CourseCardProps = {
-  thumbnail: string
+  thumbnail?: string
   category?: string
   title: string
   description?: string
@@ -17,44 +16,48 @@ export type CourseCardProps = {
 }
 
 export default function CourseCard({
-  thumbnail,
-  category,
+  category = 'Course',
   title,
-  description,
   duration,
   students,
   price,
   badge,
   onAction
 }: CourseCardProps) {
-  const imageSrc = thumbnail.startsWith('/') ? thumbnail : `/${thumbnail}`
-
   return (
-    <article className="min-w-[260px] overflow-hidden rounded-[20px] border border-border bg-white shadow-card">
-      <div className="relative h-44 w-full overflow-hidden bg-slate-100">
-        <Image src={imageSrc} alt={title} fill style={{ objectFit: 'cover' }} />
-        {badge ? (
-          <span className="absolute left-4 top-4 rounded-full bg-primary/95 px-3 py-1 text-xs font-semibold text-white shadow-lg">
-            {badge}
-          </span>
-        ) : null}
+    <article className="min-w-[260px] overflow-hidden rounded-[24px] border border-[#EADBFF] bg-white shadow-sm transition-shadow hover:shadow-md">
+      <div className="relative w-full aspect-video rounded-t-3xl bg-gradient-to-br from-[#1A0B2E] via-[#2A1152] to-[#0D0D12]">
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-5 text-center">
+          <p className="text-xs font-bold uppercase tracking-wider text-white/90">{badge || 'LIVE ব্যাচ'}</p>
+          <h3 className="mt-1 text-[#D4AF37] text-xl font-bold drop-shadow-md">{title}</h3>
+          {price ? (
+            <p className="mt-2 text-lg font-bold text-[#D4AF37]">
+              {price} <span className="text-sm font-medium text-white">মাত্র</span>
+            </p>
+          ) : null}
+        </div>
       </div>
+
       <div className="space-y-3 p-4">
         <div className="flex items-center justify-between gap-3">
-          <span className="rounded-full bg-accent/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-textPrimary">
-            {category || 'Course'}
-          </span>
-          {price ? <span className="text-sm font-semibold text-primary">{price}</span> : null}
+          {badge ? (
+            <span className="bg-[#F5F2FE] text-[#7C3AED] font-semibold px-2.5 py-1 rounded-full text-xs">
+              {badge}
+            </span>
+          ) : (
+            <span className="bg-[#F5F2FE] text-[#7C3AED] font-semibold px-2.5 py-1 rounded-full text-xs">
+              {category}
+            </span>
+          )}
+          {price ? <span className="text-sm font-bold text-[#2563EB]">{price}</span> : null}
         </div>
-        <div className="space-y-2">
-          <h3 className="text-lg font-semibold text-textPrimary">{title}</h3>
-          {description ? <p className="text-sm text-textSecondary">{description}</p> : null}
+
+        <div className="flex items-center justify-between text-sm text-slate-500">
+          <span>{duration || 'LIVE ব্যাচ'}</span>
+          <span>{students || '5240 জন'}</span>
         </div>
-        <div className="flex items-center justify-between text-sm text-textSecondary">
-          <span>{duration || '—'}</span>
-          <span>{students || '0 জন শিক্ষার্থী'}</span>
-        </div>
-        <Button variant="primary" className="w-full" onClick={onAction}>
+
+        <Button variant="primary" className="w-full rounded-2xl py-3 bg-[#2563EB] text-white font-semibold" onClick={onAction}>
           View Course
         </Button>
       </div>

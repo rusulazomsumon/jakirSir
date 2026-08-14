@@ -5,7 +5,7 @@ export default function RoutineTable() {
   return (
     <section className="pt-6">
       <div className="rounded-[16px] border border-border bg-white p-4 shadow-card">
-        <h3 className="font-semibold mb-3">Weekly Exam Routine</h3>
+        <h3 className="text-lg font-semibold mb-3">Weekly Exam Routine</h3>
         <div className="grid grid-cols-1 gap-2">
           {days.map((d) => (
             <div key={d} className="flex items-center justify-between rounded-[12px] border border-border px-3 py-2">

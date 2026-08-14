@@ -3,9 +3,11 @@
 import { useEffect, useMemo, useState } from 'react'
 
 export type QuizQuestion = {
+  id?: string | number
   question: string
   options: string[]
   answer: number
+  explain?: string
 }
 
 export type UseQuizReturn = {
@@ -18,7 +20,7 @@ export type UseQuizReturn = {
   progressPercentage: number
   next: () => void
   prev: () => void
-  selectAnswer: (optionIndex: number) => void
+  selectAnswer: (optionIndex: number, questionIndex?: number) => void
   submit: () => void
   reset: () => void
   toBanglaNumber: (value: number) => string
@@ -69,10 +71,11 @@ export function useQuiz(questions: QuizQuestion[] = []): UseQuizReturn {
   const next = () => setCurrent((prev) => Math.min(prev + 1, questions.length - 1))
   const prev = () => setCurrent((prev) => Math.max(prev - 1, 0))
 
-  const selectAnswer = (optionIndex: number) => {
+  const selectAnswer = (optionIndex: number, questionIndex?: number) => {
     setAnswers((prev) => {
       const nextAnswers = [...prev]
-      nextAnswers[current] = optionIndex
+      const idx = questionIndex ?? current
+      nextAnswers[idx] = optionIndex
       return nextAnswers
     })
   }

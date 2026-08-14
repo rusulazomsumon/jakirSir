@@ -15,7 +15,7 @@ export default function VideoCard({ title, duration = '12:34', free = true, onWa
     <div className="rounded-[16px] border border-border bg-white p-4 shadow-card">
       <div className="flex items-center justify-between">
         <div>
-          <p className="font-semibold text-textPrimary">{title}</p>
+          <p className="text-lg font-semibold text-textPrimary">{title}</p>
           <p className="text-xs text-textSecondary">{duration}</p>
         </div>
         <div className="flex flex-col items-end gap-2">

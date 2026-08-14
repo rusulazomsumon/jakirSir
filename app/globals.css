@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-noto: 'Noto Sans Bengali', sans-serif;
+  --font-hind: 'Noto Sans Bengali', sans-serif;
 
   --color-primary: #2563EB;
   --color-primary-dark: #1D4ED8;
@@ -33,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
@@ -45,7 +46,7 @@ body {
   margin: 0;
   background: var(--color-background);
   color: var(--color-text-primary);
-  font-family: var(--font-noto);
+  font-family: var(--font-hind);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -67,7 +68,7 @@ img {
 
 @layer base {
   html {
-    font-family: var(--font-noto);
+    font-family: var(--font-hind);
   }
 
   body,
@@ -75,7 +76,7 @@ img {
   input,
   select,
   textarea {
-    font-family: var(--font-noto);
+    font-family: var(--font-hind);
   }
 }
 
