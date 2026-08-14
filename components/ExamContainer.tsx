@@ -250,7 +250,7 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
               <div>
                 <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl">পরীক্ষার ফলাফল</h1>
                 <p className="mt-1 text-sm text-slate-500">
-                  {candidateName}, আপনার পরীক্ষার ফলাফল নিচে দেওয়া হলো।
+                  <span className="font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md">{candidateName}</span>, আপনার পরীক্ষার ফলাফল নিচে দেওয়া হলো।
                 </p>
               </div>
               <span
@@ -358,7 +358,7 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
                     )}
                     {question.source && question.source.length > 0 && (
                       <div className="mt-2 text-xs text-slate-500">
-                        সোর্স: {question.source.join(', ')}
+                        পরীক্ষা: {question.source.join(', ')}
                       </div>
                     )}
                   </div>

@@ -101,6 +101,27 @@ export default function Header() {
             <MenuIcon />
           </button>
         </div>
+        {/* নতুন Nav Menu - Mobile + Desktop */}
+        <div className="flex flex-1 items-center justify-center gap-1 px-1">
+          <Link
+            href="/"
+            className="px-2 py-1 text-[10px] font-medium text-slate-600 hover:text-sky-600 transition-colors whitespace-nowrap"
+          >
+            Home
+          </Link>
+          <Link
+            href="/"
+            className="px-2 py-1 text-[10px] font-medium text-slate-600 hover:text-sky-600 transition-colors whitespace-nowrap"
+          >
+            Job Circular
+          </Link>
+          <Link
+            href="/all-courses"
+            className="rounded-full bg-[#8A2BE2] px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-sky-700 transition-colors whitespace-nowrap"
+          >
+            Enroll
+          </Link>
+        </div>
 
         <div className="flex items-center gap-3">
           <button
@@ -139,7 +160,7 @@ export default function Header() {
                   <div className="relative h-8 w-8">
                     <Image src="/images/jakirSirEdulogo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
                   </div>
-                  <span className="font-semibold text-slate-800 text-sm">Jakir Sir SMART Edu</span>
+                  <span className="font-semibold text-slate-800 text-sm">জাকির স্যার edu!</span>
                 </div>
                 <button
                   type="button"

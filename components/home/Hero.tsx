@@ -9,8 +9,8 @@ import Image from 'next/image'
 import { useSubjectSelection } from '@/components/quiz/SubjectSelectionContext'
 
 const slides = [
-  { id: 1, img: '/images/SomajSebhaBanner.jpg', href: '/all-courses' },
-  { id: 2, img: '/images/BannerSomajShebaCourse.jpeg', href: '/all-courses' }
+  { id: 1, img: '/images/slider/somajseba199.png', href: '/all-courses' },
+  { id: 2, img: '/images/slider/combinedBank.png', href: '/all-courses' }
 ]
 
 const quickActions = [
