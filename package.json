@@ -32,6 +32,11 @@
     "sonner": "^2.0.8",
     "swiper": "^14.1.0"
   },
+  "scripts": {
+    "dev": "NODE_OPTIONS='--max-old-space-size=4096' next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "devDependencies": {
     "@types/node": "^20.9.1",
     "@types/react": "^18.2.28",

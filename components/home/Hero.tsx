@@ -16,8 +16,8 @@ const slides = [
 const quickActions = [
   { label: 'লাইভ MCQ', href: '/live-mcq', live: true },
   { label: 'সকল কোর্স', href: '/all-courses' },
-  { label: 'মডেল টেস্ট', href: '/mock-test' },
-  { label: 'এক্সাম রুটিন', href: '/routine' }
+  { label: 'মডেল টেস্ট', href: '/model-test' },
+  { label: 'টপিক ভিত্তিক কুইজ', href: '/topic-wise-exam' }
 ]
 
 export default function Hero() {

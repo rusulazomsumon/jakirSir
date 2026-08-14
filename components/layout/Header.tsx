@@ -56,12 +56,13 @@ const TikTokIcon = () => (
 
 const menuLinks = [
   { href: '/all-courses', label: 'All Course' },
-  { href: '/routine', label: 'Exam Routine' },
-  { href: '/central-exam', label: 'Central Exam' },
-  { href: '/mock-test', label: 'Model Test' },
-  { href: '/resources', label: 'Resource' },
-  { href: '/job-news', label: 'চাকরি বার্তা' },
-  { href: '/blog', label: 'ব্লগ' }
+  { href: '/', label: 'Exam Routine' },
+  { href: '/', label: 'Central Exam' },
+  { href: '/model-test', label: 'Model Test' },
+  { href: '/model-test', label: 'Model Test' },
+  { href: '/', label: 'Resource' },
+  { href: '/', label: 'চাকরি বার্তা' },
+  { href: '/', label: 'ব্লগ' }
 ]
 
 export default function Header() {

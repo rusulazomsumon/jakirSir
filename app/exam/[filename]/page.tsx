@@ -23,7 +23,20 @@ export default function ExamRunnerPage() {
         setError(null)
 
         const decodedFilename = decodeURIComponent(filename)
-        const data = await loadModelTestData(decodedFilename)
+        let data: ExamData
+
+        try {
+          data = await loadModelTestData(decodedFilename)
+        } catch (modelTestErr) {
+          const msg = modelTestErr instanceof Error ? modelTestErr.message : String(modelTestErr)
+          if (msg.includes('Unknown model test file')) {
+            const res = await fetch(`/api/topic-exams/${encodeURIComponent(decodedFilename)}`)
+            if (!res.ok) throw new Error('Exam not found')
+            data = await res.json()
+          } else {
+            throw modelTestErr
+          }
+        }
 
         if (isMounted) {
           setExamData(data)
