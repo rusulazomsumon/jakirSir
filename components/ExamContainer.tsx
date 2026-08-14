@@ -326,6 +326,11 @@ export default function ExamContainer({ examData }: ExamContainerProps) {
                         {question.explain}
                       </div>
                     )}
+                    {question.source && question.source.length > 0 && (
+                      <div className="mt-2 text-xs text-slate-500">
+                        সোর্স: {question.source.join(', ')}
+                      </div>
+                    )}
                   </div>
                 )
               })}

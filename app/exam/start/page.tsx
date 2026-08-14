@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { ExamData } from '@/types/exam'
 import { loadModelTestData } from '@/utils/jsonLoader'
+import { loadTopicExamData } from '@/app/actions/topicLoader'
 import ExamContainer from '@/components/ExamContainer'
 
 export default function ExamStartPage() {
@@ -23,8 +24,13 @@ export default function ExamStartPage() {
         setIsLoading(true)
         setError(null)
 
-        const fileName = 'combinedModelTest.json'
-        const data = await loadModelTestData(fileName)
+        let data: ExamData
+        if (topic && topic !== 'General') {
+          data = await loadTopicExamData(subject, topic)
+        } else {
+          const fileName = 'combinedModelTest.json'
+          data = await loadModelTestData(fileName)
+        }
 
         if (isMounted) {
           setExamData(data)

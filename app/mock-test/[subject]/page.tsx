@@ -3,51 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-
-interface Topic {
-  name: string
-  topics: string[]
-}
-
-interface SubjectData {
-  title: string
-  categories: Topic[]
-}
-
-const subjectTopicsData: Record<string, SubjectData> = {
-  bangla: {
-    title: 'বাংলা',
-    categories: [
-      {
-        name: 'বাংলা সাহিত্য',
-        topics: [
-          'বাংলা সংবাদপত্র',
-          'বাংলা সাহিত্যের শাখা',
-          'বাংলা সাহিত্যিক ও সাহিত্যকর্ম',
-          'বাংলায় বিদেশী সাহিত্যিক ও সাহিত্যকর্ম',
-          'ভাষা আন্দোলনভিত্তিক সাহিত্য',
-          'মুক্তিযুদ্ধভিত্তিক বাংলা সাহিত্য',
-          'বাংলায় উল্লেখযোগ্য গ্রন্থ ও চরিত্র',
-          'সাহিত্যিকদের উপাধি ও ছদ্মনাম',
-          'বাংলা সাহিত্যের প্রথম'
-        ]
-      },
-      {
-        name: 'বাংলা ভাষা (ব্যাকরণ)',
-        topics: [
-          'ব্যাকরণ কাঠামো',
-          'ধ্বনিমূল (Phonology)',
-          'শব্দতত্ত্ব বা রূপতত্ত্ব (Morphology)',
-          'বাক্যতত্ত্ব বা পদক্রম (Syntax)',
-          'অর্থতত্ত্ব (Semantics)',
-          'ছন্দ ও অলংকার',
-          'নির্মিতি',
-          'সারাংশ ও সারমর্ম'
-        ]
-      }
-    ]
-  }
-}
+import { subjectTopicsData, SubTopic } from '@/data/topicMappings'
 
 const BackIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -89,8 +45,8 @@ export default function MockTestSubjectPage({ params }: { params: { subject: str
     setOpenCategories((prev) => ({ ...prev, [index]: !prev[index] }))
   }
 
-  const handleTopicClick = (topicName: string) => {
-    router.push(`/exam/start?subject=${encodeURIComponent(subjectKey)}&topic=${encodeURIComponent(topicName)}`)
+  const handleTopicClick = (topicSlug: string) => {
+    router.push(`/exam/start?subject=${encodeURIComponent(subjectKey)}&topic=${encodeURIComponent(topicSlug)}`)
   }
 
   return (
@@ -130,13 +86,13 @@ export default function MockTestSubjectPage({ params }: { params: { subject: str
 
               {openCategories[categoryIndex] && (
                 <div className="px-3 pb-3">
-                  {category.topics.map((topic, topicIndex) => (
+                  {category.topics.map((topic: SubTopic, topicIndex: number) => (
                     <div
                       key={topicIndex}
-                      onClick={() => handleTopicClick(topic)}
+                      onClick={() => handleTopicClick(topic.slug)}
                       className="bg-[#25252A] p-3.5 rounded-xl flex items-center justify-between cursor-pointer hover:bg-[#2D2D34] transition-all my-1.5"
                     >
-                      <span className="text-white text-sm font-medium">{topic}</span>
+                      <span className="text-white text-sm font-medium">{topic.name}</span>
                       <span className="text-slate-400 w-4 h-4 shrink-0">
                         <ChevronRight />
                       </span>
