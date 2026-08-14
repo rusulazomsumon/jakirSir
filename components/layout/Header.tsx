@@ -58,7 +58,7 @@ const menuLinks = [
   { href: '/all-courses', label: 'All Course' },
   { href: '/', label: 'Exam Routine' },
   { href: '/', label: 'Central Exam' },
-  { href: '/model-test', label: 'Model Test' },
+  { href: '/topic-wise-exam', label: 'টপিক ভিত্তিক কুইজ' },
   { href: '/model-test', label: 'Model Test' },
   { href: '/', label: 'Resource' },
   { href: '/', label: 'চাকরি বার্তা' },
@@ -95,7 +95,7 @@ export default function Header() {
           </button>
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-10 w-10">
-              <Image src="/images/jakirSirSmartEdu.logo.png" alt="Jakir Sir" fill style={{ objectFit: 'contain' }} />
+              <Image src="/images/jakirSirSmartEdulogo.png" alt="Jakir Sir Edu Logo" fill style={{ objectFit: 'contain' }} />
             </div>
             <span className="hidden text-lg font-semibold text-textPrimary sm:inline-block">Jakir Sir</span>
           </Link>

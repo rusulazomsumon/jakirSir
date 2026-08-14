@@ -9,7 +9,7 @@ const quickLinks = [
   { label: 'চলমান কোর্সসমূহ', href: '/all-courses' },
   { label: 'পরীক্ষা রুটিন', href: '/routine' },
   { label: 'মডেল টেস্ট', href: '/model-test' },
-  { label: 'টপিক ভিত্তিক কুইজ', href: '/topic-wise-exam' }
+  { label: 'টপিক ভিত্তিক কুইজ', href: '/topic-wise-exam' },
   { label: 'ব্লগ ও পরামর্শ', href: '/blog' },
   { label: 'যোগাযোগের ঠিকানা', href: '/contact' }
 ]
